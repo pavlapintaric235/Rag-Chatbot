@@ -33,7 +33,7 @@ body {
   position: fixed;
   inset: 0;
   background-color: #05070b;
-  background-image: url("./assets/nietzsche-bg.jpg");
+  background-image: url("/static/assets/nietzsche-bg.jpg");
   background-size: 80%;
   background-position: center center;
   background-repeat: no-repeat;
