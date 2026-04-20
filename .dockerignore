@@ -8,7 +8,6 @@ __pycache__
 *.pyd
 *.log
 tests
-data
 .env
 Dockerfile.smoke
 nietzsche-rag-bot.tar

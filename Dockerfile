@@ -12,6 +12,7 @@ RUN python -m pip install --upgrade pip && \
 
 COPY app ./app
 COPY scripts ./scripts
+COPY data ./data
 COPY run.py ./run.py
 
 EXPOSE 8010
