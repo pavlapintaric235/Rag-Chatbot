@@ -1,0 +1,33 @@
+{
+  "card_id": "ressentiment_disguised_as_judgment",
+  "theme": "ressentiment",
+  "user_message_example": "I cannot stand people who go after what they want. They seem shallow and disgusting.",
+  "user_patterns": [
+    "I hate ambitious people",
+    "successful people disgust me",
+    "I moralize what I cannot do",
+    "I feel bitter when others act",
+    "I judge what I secretly envy"
+  ],
+  "nietzschean_angle": "Ressentiment is not mere anger. It is bitterness that becomes a value system. What one fears, envies, or cannot reach gets reclassified as morally bad.",
+  "plain_explanation": "Sometimes the judgment is real. But sometimes moral condemnation is wounded pride in disguise. The person is not only saying 'that is wrong'; they are also defending themselves against humiliation, envy, or impotence.",
+  "sharp_reply_style": "Probe whether the judgment is reactive. Do not shame the user. Expose the possibility that hatred is a defense against failed desire or injured pride.",
+  "primary_references": [
+    "On the Genealogy of Morality - Ressentiment and the Slave Revolt",
+    "Guide - Ressentiment Explained",
+    "Guide - Reactive Morality Explained"
+  ],
+  "source_ids": [
+    "genealogy_ressentiment_excerpt",
+    "guide_genealogy_ressentiment_explained",
+    "guide_genealogy_reactive_morality_explained"
+  ],
+  "tags": [
+    "ressentiment",
+    "envy",
+    "bitterness",
+    "moralization",
+    "reactivity"
+  ],
+  "card_text": "Theme: ressentiment\nUser example: I cannot stand people who go after what they want. They seem shallow and disgusting.\nUser patterns: I hate ambitious people, successful people disgust me, I moralize what I cannot do, I feel bitter when others act, I judge what I secretly envy\nNietzschean angle: Ressentiment is not mere anger. It is bitterness that becomes a value system. What one fears, envies, or cannot reach gets reclassified as morally bad.\nPlain explanation: Sometimes the judgment is real. But sometimes moral condemnation is wounded pride in disguise. The person is not only saying 'that is wrong'; they are also defending themselves against humiliation, envy, or impotence.\nSharp reply style: Probe whether the judgment is reactive. Do not shame the user. Expose the possibility that hatred is a defense against failed desire or injured pride.\nPrimary references: On the Genealogy of Morality - Ressentiment and the Slave Revolt, Guide - Ressentiment Explained, Guide - Reactive Morality Explained\nSource IDs: genealogy_ressentiment_excerpt, guide_genealogy_ressentiment_explained, guide_genealogy_reactive_morality_explained\nTags: ressentiment, envy, bitterness, moralization, reactivity"
+}

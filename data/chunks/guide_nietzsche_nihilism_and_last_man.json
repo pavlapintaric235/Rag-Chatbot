@@ -1,0 +1,98 @@
+[
+  {
+    "chunk_id": "guide_nietzsche_nihilism_and_last_man__chunk_0",
+    "source_id": "guide_nietzsche_nihilism_and_last_man",
+    "chunk_index": 0,
+    "title": "Guide - Nihilism and the Last Man",
+    "author": "Project",
+    "source_type": "text",
+    "work": "Nietzsche RAG diagnosis",
+    "section": "Secondary guide",
+    "themes": [
+      "nihilism",
+      "last man",
+      "comfort",
+      "meaning",
+      "death of God"
+    ],
+    "mode": "diagnosis",
+    "tone": "analytic",
+    "safe_use_note": "Use to explain comfort-centered decline and the erosion of higher aims.",
+    "misreading_risk": "Can be turned into cheap contempt for ordinary life.",
+    "chunk_text": "TITLE: Nihilism and the Last Man WORK: Nietzsche RAG Interpretation SECTION: Secondary guide AUTHOR: Project THEMES: nihilism, last man, comfort, meaning, death of God SOURCE_TYPE: text CORE IDEA: Nietzsche thinks the deepest danger after the death of God is nihilism. Once the old religious framework collapses, people lose the higher meaning that once justified suffering and earthly life. But instead of creating stronger values, they may cling to a weakened moral world focused only on comfort, pity, equality, and the reduction of pain. The end point of this is the \"last man\": a human being who wants little, risks little, suffers little, and therefore also becomes little. The last man does not seek greatness, creation, or longing. He seeks manageable",
+    "char_count": 759,
+    "word_count": 120
+  },
+  {
+    "chunk_id": "guide_nietzsche_nihilism_and_last_man__chunk_1",
+    "source_id": "guide_nietzsche_nihilism_and_last_man",
+    "chunk_index": 1,
+    "title": "Guide - Nihilism and the Last Man",
+    "author": "Project",
+    "source_type": "text",
+    "work": "Nietzsche RAG diagnosis",
+    "section": "Secondary guide",
+    "themes": [
+      "nihilism",
+      "last man",
+      "comfort",
+      "meaning",
+      "death of God"
+    ],
+    "mode": "diagnosis",
+    "tone": "analytic",
+    "safe_use_note": "Use to explain comfort-centered decline and the erosion of higher aims.",
+    "misreading_risk": "Can be turned into cheap contempt for ordinary life.",
+    "chunk_text": "who wants little, risks little, suffers little, and therefore also becomes little. The last man does not seek greatness, creation, or longing. He seeks manageable pleasure, health, warmth, safety, and the avoidance of difficulty. He says, in effect, \"we invented happiness,\" but what he calls happiness is really smallness without aspiration. WHAT THIS DOES NOT MEAN: This does not mean all ordinary pleasure is contemptible. This does not mean health, rest, or security are evil. This does not mean Nietzsche wants chaos instead. WHAT IT DOES MEAN: A culture can lose higher aims and then quietly reorganize itself around survival and comfort. Once that happens, meaning weakens, greatness looks ridiculous, and humanity becomes harder to admire. WHY THIS MATTERS: Nietzsche",
+    "char_count": 775,
+    "word_count": 120
+  },
+  {
+    "chunk_id": "guide_nietzsche_nihilism_and_last_man__chunk_2",
+    "source_id": "guide_nietzsche_nihilism_and_last_man",
+    "chunk_index": 2,
+    "title": "Guide - Nihilism and the Last Man",
+    "author": "Project",
+    "source_type": "text",
+    "work": "Nietzsche RAG diagnosis",
+    "section": "Secondary guide",
+    "themes": [
+      "nihilism",
+      "last man",
+      "comfort",
+      "meaning",
+      "death of God"
+    ],
+    "mode": "diagnosis",
+    "tone": "analytic",
+    "safe_use_note": "Use to explain comfort-centered decline and the erosion of higher aims.",
+    "misreading_risk": "Can be turned into cheap contempt for ordinary life.",
+    "chunk_text": "quietly reorganize itself around survival and comfort. Once that happens, meaning weakens, greatness looks ridiculous, and humanity becomes harder to admire. WHY THIS MATTERS: Nietzsche does not think nihilism always looks dramatic. Sometimes it looks comfortable. Sometimes it looks like a harmless reduction of ambition. Sometimes it looks like a whole civilization deciding that pain is the only thing to avoid and forgetting to ask what is worth becoming. HOW THE BOT SHOULD RESPOND: The bot should use this frame when the user is confusing comfort with fulfillment. It should distinguish genuine recovery from spiritual contraction. It should explain nihilism not just as \"nothing matters,\" but also as the erosion of higher aims. AVOID: Do not turn nihilism into melodrama.",
+    "char_count": 779,
+    "word_count": 120
+  },
+  {
+    "chunk_id": "guide_nietzsche_nihilism_and_last_man__chunk_3",
+    "source_id": "guide_nietzsche_nihilism_and_last_man",
+    "chunk_index": 3,
+    "title": "Guide - Nihilism and the Last Man",
+    "author": "Project",
+    "source_type": "text",
+    "work": "Nietzsche RAG diagnosis",
+    "section": "Secondary guide",
+    "themes": [
+      "nihilism",
+      "last man",
+      "comfort",
+      "meaning",
+      "death of God"
+    ],
+    "mode": "diagnosis",
+    "tone": "analytic",
+    "safe_use_note": "Use to explain comfort-centered decline and the erosion of higher aims.",
+    "misreading_risk": "Can be turned into cheap contempt for ordinary life.",
+    "chunk_text": "contraction. It should explain nihilism not just as \"nothing matters,\" but also as the erosion of higher aims. AVOID: Do not turn nihilism into melodrama. Do not mock ordinary human needs. Do not present Nietzsche as anti-happiness in every sense. USEFUL USER MESSAGES THIS HELPS WITH: \"What is nihilism for Nietzsche?\" \"Who is the last man?\" \"Why does Nietzsche connect comfort to decline?\" \"Why is meaning at risk after the death of God?\"",
+    "char_count": 440,
+    "word_count": 73
+  }
+]

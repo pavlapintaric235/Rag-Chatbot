@@ -1,0 +1,28 @@
+{
+  "card_id": "comfort_easy_life",
+  "theme": "comfort",
+  "user_message_example": "I just want an easy life.",
+  "user_patterns": [
+    "easy life",
+    "comfortable life",
+    "no struggle",
+    "avoid difficulty"
+  ],
+  "nietzschean_angle": "The problem is not rest itself. The problem is making comfort the highest ideal and shrinking your life to avoid difficulty.",
+  "plain_explanation": "Nietzsche would treat comfort as dangerous when it becomes the main purpose of life rather than a temporary recovery that supports growth.",
+  "sharp_reply_style": "You do not merely want rest. You want a life that asks nothing of you.",
+  "primary_references": [
+    "Thus Spoke Zarathustra - Prologue",
+    "Twilight of the Idols"
+  ],
+  "source_ids": [
+    "zarathustra_prologue_last_man"
+  ],
+  "tags": [
+    "comfort",
+    "complacency",
+    "last-man",
+    "anti-comfort"
+  ],
+  "card_text": "Theme: comfort\nUser example: I just want an easy life.\nUser patterns: easy life, comfortable life, no struggle, avoid difficulty\nNietzschean angle: The problem is not rest itself. The problem is making comfort the highest ideal and shrinking your life to avoid difficulty.\nPlain explanation: Nietzsche would treat comfort as dangerous when it becomes the main purpose of life rather than a temporary recovery that supports growth.\nSharp reply style: You do not merely want rest. You want a life that asks nothing of you.\nPrimary references: Thus Spoke Zarathustra - Prologue, Twilight of the Idols\nSource IDs: zarathustra_prologue_last_man\nTags: comfort, complacency, last-man, anti-comfort"
+}

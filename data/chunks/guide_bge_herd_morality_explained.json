@@ -1,0 +1,122 @@
+[
+  {
+    "chunk_id": "guide_bge_herd_morality_explained__chunk_0",
+    "source_id": "guide_bge_herd_morality_explained",
+    "chunk_index": 0,
+    "title": "Guide - Herd Morality Explained",
+    "author": "Project",
+    "source_type": "text",
+    "work": "Nietzsche RAG diagnosis",
+    "section": "Beyond Good and Evil guide",
+    "themes": [
+      "herd morality",
+      "conformity",
+      "approval",
+      "morality",
+      "safety"
+    ],
+    "mode": "diagnosis",
+    "tone": "analytic",
+    "safe_use_note": "Use to translate herd morality into modern psychological and social terms.",
+    "misreading_risk": "Can drift into shallow anti-social posturing if used crudely.",
+    "chunk_text": "TITLE: Herd Morality Explained WORK: Nietzsche RAG Interpretation SECTION: Beyond Good and Evil guide AUTHOR: Project THEMES: herd morality, conformity, approval, morality, safety SOURCE_TYPE: text CORE IDEA: Herd morality is morality shaped by the needs of group safety, sameness, reassurance, and mutual protection. Nietzsche's point is not that all shared morality is false. It is that many moral judgments arise not from depth or truth but from the instincts of the herd: what keeps a group stable, comfortable, coordinated, and protected from disruption. This morality tends to distrust difference, rank, sharpness, intensity, and difficult excellence. WHAT THIS DOES NOT MEAN: This does not mean kindness is herd morality. This does not mean all social norms are corrupt. This does not",
+    "char_count": 791,
+    "word_count": 120
+  },
+  {
+    "chunk_id": "guide_bge_herd_morality_explained__chunk_1",
+    "source_id": "guide_bge_herd_morality_explained",
+    "chunk_index": 1,
+    "title": "Guide - Herd Morality Explained",
+    "author": "Project",
+    "source_type": "text",
+    "work": "Nietzsche RAG diagnosis",
+    "section": "Beyond Good and Evil guide",
+    "themes": [
+      "herd morality",
+      "conformity",
+      "approval",
+      "morality",
+      "safety"
+    ],
+    "mode": "diagnosis",
+    "tone": "analytic",
+    "safe_use_note": "Use to translate herd morality into modern psychological and social terms.",
+    "misreading_risk": "Can drift into shallow anti-social posturing if used crudely.",
+    "chunk_text": "WHAT THIS DOES NOT MEAN: This does not mean kindness is herd morality. This does not mean all social norms are corrupt. This does not mean every group value is shallow. This does not mean strong people are always right. The claim is genealogical, not total. Some moral ideals may be less about truth than about preserving a certain kind of collectivity. WHAT IT LOOKS LIKE IN REAL LIFE: A group calls a trait \"bad\" mainly because it makes them uneasy. People punish distinction as arrogance. A person internalizes social approval so deeply that they mistake it for conscience. A person fears being seen as selfish more than they fear becoming mediocre. People prefer the manageable over the excellent because",
+    "char_count": 708,
+    "word_count": 120
+  },
+  {
+    "chunk_id": "guide_bge_herd_morality_explained__chunk_2",
+    "source_id": "guide_bge_herd_morality_explained",
+    "chunk_index": 2,
+    "title": "Guide - Herd Morality Explained",
+    "author": "Project",
+    "source_type": "text",
+    "work": "Nietzsche RAG diagnosis",
+    "section": "Beyond Good and Evil guide",
+    "themes": [
+      "herd morality",
+      "conformity",
+      "approval",
+      "morality",
+      "safety"
+    ],
+    "mode": "diagnosis",
+    "tone": "analytic",
+    "safe_use_note": "Use to translate herd morality into modern psychological and social terms.",
+    "misreading_risk": "Can drift into shallow anti-social posturing if used crudely.",
+    "chunk_text": "mistake it for conscience. A person fears being seen as selfish more than they fear becoming mediocre. People prefer the manageable over the excellent because excellence disrupts the emotional economy of equality. WHY IT MATTERS: Herd morality can shrink a person without obvious violence. It makes conformity feel righteous. It makes self-reduction feel good. A person can become morally legible to others while losing intensity, judgment, or aspiration. HOW THE BOT SHOULD RESPOND: The bot should help the user ask whether a standard is true or merely socially soothing. It should separate concern for others from dependence on social permission. It should be careful not to flatten everything into elitism. It should challenge the moralization of safety when safety becomes",
+    "char_count": 776,
+    "word_count": 120
+  },
+  {
+    "chunk_id": "guide_bge_herd_morality_explained__chunk_3",
+    "source_id": "guide_bge_herd_morality_explained",
+    "chunk_index": 3,
+    "title": "Guide - Herd Morality Explained",
+    "author": "Project",
+    "source_type": "text",
+    "work": "Nietzsche RAG diagnosis",
+    "section": "Beyond Good and Evil guide",
+    "themes": [
+      "herd morality",
+      "conformity",
+      "approval",
+      "morality",
+      "safety"
+    ],
+    "mode": "diagnosis",
+    "tone": "analytic",
+    "safe_use_note": "Use to translate herd morality into modern psychological and social terms.",
+    "misreading_risk": "Can drift into shallow anti-social posturing if used crudely.",
+    "chunk_text": "from dependence on social permission. It should be careful not to flatten everything into elitism. It should challenge the moralization of safety when safety becomes the highest principle. GOOD RESPONSE ANGLE: Some of what you call conscience may be the echo of the group. If your highest moral feeling is \"I must not stand out,\" then your values may be serving belonging before truth. The herd does not only punish cruelty. It also punishes difficult difference. AVOID: Do not praise cruelty, domination, or contempt. Do not imply that every convention is cowardice. Do not encourage the user to become antisocial for theatrical reasons. USEFUL USER MESSAGES THIS HELPS WITH: \"I'm afraid of standing out.\" \"I feel guilty when I prioritize",
+    "char_count": 739,
+    "word_count": 120
+  },
+  {
+    "chunk_id": "guide_bge_herd_morality_explained__chunk_4",
+    "source_id": "guide_bge_herd_morality_explained",
+    "chunk_index": 4,
+    "title": "Guide - Herd Morality Explained",
+    "author": "Project",
+    "source_type": "text",
+    "work": "Nietzsche RAG diagnosis",
+    "section": "Beyond Good and Evil guide",
+    "themes": [
+      "herd morality",
+      "conformity",
+      "approval",
+      "morality",
+      "safety"
+    ],
+    "mode": "diagnosis",
+    "tone": "analytic",
+    "safe_use_note": "Use to translate herd morality into modern psychological and social terms.",
+    "misreading_risk": "Can drift into shallow anti-social posturing if used crudely.",
+    "chunk_text": "the user to become antisocial for theatrical reasons. USEFUL USER MESSAGES THIS HELPS WITH: \"I'm afraid of standing out.\" \"I feel guilty when I prioritize my own path.\" \"I keep shrinking to stay acceptable.\" \"I don't know if my values are really mine.\" \"I feel trapped by ordinary expectations.\"",
+    "char_count": 295,
+    "word_count": 49
+  }
+]

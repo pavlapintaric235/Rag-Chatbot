@@ -1,0 +1,122 @@
+[
+  {
+    "chunk_id": "guide_genealogy_reactive_morality_explained__chunk_0",
+    "source_id": "guide_genealogy_reactive_morality_explained",
+    "chunk_index": 0,
+    "title": "Guide - Reactive Morality Explained",
+    "author": "Project",
+    "source_type": "text",
+    "work": "Nietzsche RAG diagnosis",
+    "section": "Genealogy guide",
+    "themes": [
+      "reactive morality",
+      "reaction",
+      "negation",
+      "values",
+      "weakness"
+    ],
+    "mode": "diagnosis",
+    "tone": "analytic",
+    "safe_use_note": "Use to explain enemy-centered, reactive living versus genuine value creation.",
+    "misreading_risk": "Can be reduced to empty anti-moral rhetoric.",
+    "chunk_text": "TITLE: Reactive Morality Explained WORK: Nietzsche RAG Interpretation SECTION: Genealogy guide AUTHOR: Project THEMES: reactive morality, reaction, negation, values, weakness SOURCE_TYPE: text CORE IDEA: Reactive morality does not begin by creating a positive way of life. It begins by saying no. It defines itself against what it fears, hates, envies, or cannot bear. Instead of asking, \"What do I affirm?\" it asks, \"What do I condemn?\" Nietzsche's criticism is that such morality is dependent. It needs an enemy in order to know what it is. A reactive person often believes they are principled, but their values are built around opposition rather than creation. WHAT THIS DOES NOT MEAN: This does not mean every political or moral opposition is reactive. This",
+    "char_count": 761,
+    "word_count": 120
+  },
+  {
+    "chunk_id": "guide_genealogy_reactive_morality_explained__chunk_1",
+    "source_id": "guide_genealogy_reactive_morality_explained",
+    "chunk_index": 1,
+    "title": "Guide - Reactive Morality Explained",
+    "author": "Project",
+    "source_type": "text",
+    "work": "Nietzsche RAG diagnosis",
+    "section": "Genealogy guide",
+    "themes": [
+      "reactive morality",
+      "reaction",
+      "negation",
+      "values",
+      "weakness"
+    ],
+    "mode": "diagnosis",
+    "tone": "analytic",
+    "safe_use_note": "Use to explain enemy-centered, reactive living versus genuine value creation.",
+    "misreading_risk": "Can be reduced to empty anti-moral rhetoric.",
+    "chunk_text": "values are built around opposition rather than creation. WHAT THIS DOES NOT MEAN: This does not mean every political or moral opposition is reactive. This does not mean negation is never necessary. This does not mean boundaries, criticism, or refusal are bad. The issue is structural. Does the person have a positive center, or only an enemy? WHAT IT LOOKS LIKE IN REAL LIFE: A person defines themselves mainly by what they reject. A person feels most alive when denouncing others. A person has no project of their own, only criticism of someone else's project. A person turns every disagreement into a source of identity. A person is energized by opposition but empty in creation. WHY IT MATTERS: A reactive",
+    "char_count": 708,
+    "word_count": 120
+  },
+  {
+    "chunk_id": "guide_genealogy_reactive_morality_explained__chunk_2",
+    "source_id": "guide_genealogy_reactive_morality_explained",
+    "chunk_index": 2,
+    "title": "Guide - Reactive Morality Explained",
+    "author": "Project",
+    "source_type": "text",
+    "work": "Nietzsche RAG diagnosis",
+    "section": "Genealogy guide",
+    "themes": [
+      "reactive morality",
+      "reaction",
+      "negation",
+      "values",
+      "weakness"
+    ],
+    "mode": "diagnosis",
+    "tone": "analytic",
+    "safe_use_note": "Use to explain enemy-centered, reactive living versus genuine value creation.",
+    "misreading_risk": "Can be reduced to empty anti-moral rhetoric.",
+    "chunk_text": "A person turns every disagreement into a source of identity. A person is energized by opposition but empty in creation. WHY IT MATTERS: A reactive life is easier to sustain than a creative one. It gives direction without requiring real building. But it leaves the person dependent on what they oppose. Their values remain secondary, derivative, and fragile. HOW THE BOT SHOULD RESPOND: The bot should help the user notice whether they are organized by reaction. It should ask what they are building, not just what they are against. It should redirect resentment toward self-formation and clearer valuation. It should avoid moralistic scolding and instead expose dependence. GOOD RESPONSE ANGLE: You may know very clearly what you reject, but that",
+    "char_count": 746,
+    "word_count": 120
+  },
+  {
+    "chunk_id": "guide_genealogy_reactive_morality_explained__chunk_3",
+    "source_id": "guide_genealogy_reactive_morality_explained",
+    "chunk_index": 3,
+    "title": "Guide - Reactive Morality Explained",
+    "author": "Project",
+    "source_type": "text",
+    "work": "Nietzsche RAG diagnosis",
+    "section": "Genealogy guide",
+    "themes": [
+      "reactive morality",
+      "reaction",
+      "negation",
+      "values",
+      "weakness"
+    ],
+    "mode": "diagnosis",
+    "tone": "analytic",
+    "safe_use_note": "Use to explain enemy-centered, reactive living versus genuine value creation.",
+    "misreading_risk": "Can be reduced to empty anti-moral rhetoric.",
+    "chunk_text": "and clearer valuation. It should avoid moralistic scolding and instead expose dependence. GOOD RESPONSE ANGLE: You may know very clearly what you reject, but that still does not tell you what you serve. If your identity collapses when the enemy disappears, then you have not yet created a real center. Negation is sometimes necessary, but it is a poor permanent home. AVOID: Do not pretend positivity alone solves anything. Do not turn this into bland \"focus on yourself\" advice. Do not dismiss real conflict where conflict is necessary. USEFUL USER MESSAGES THIS HELPS WITH: \"I define myself by what I hate.\" \"I'm always reacting.\" \"I don't know what I stand for anymore.\" \"I have criticism but no direction.\" \"I feel",
+    "char_count": 718,
+    "word_count": 120
+  },
+  {
+    "chunk_id": "guide_genealogy_reactive_morality_explained__chunk_4",
+    "source_id": "guide_genealogy_reactive_morality_explained",
+    "chunk_index": 4,
+    "title": "Guide - Reactive Morality Explained",
+    "author": "Project",
+    "source_type": "text",
+    "work": "Nietzsche RAG diagnosis",
+    "section": "Genealogy guide",
+    "themes": [
+      "reactive morality",
+      "reaction",
+      "negation",
+      "values",
+      "weakness"
+    ],
+    "mode": "diagnosis",
+    "tone": "analytic",
+    "safe_use_note": "Use to explain enemy-centered, reactive living versus genuine value creation.",
+    "misreading_risk": "Can be reduced to empty anti-moral rhetoric.",
+    "chunk_text": "define myself by what I hate.\" \"I'm always reacting.\" \"I don't know what I stand for anymore.\" \"I have criticism but no direction.\" \"I feel dependent on conflict.\"",
+    "char_count": 163,
+    "word_count": 28
+  }
+]

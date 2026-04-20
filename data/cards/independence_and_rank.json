@@ -1,0 +1,33 @@
+{
+  "card_id": "independence_and_rank",
+  "theme": "independence",
+  "user_message_example": "I want stronger standards and more self-respect, but I do not want to become arrogant.",
+  "user_patterns": [
+    "I want more self-respect",
+    "I need stronger standards",
+    "I depend too much on others",
+    "I want more independence",
+    "I do not want to flatten everything anymore"
+  ],
+  "nietzschean_angle": "Nietzsche’s language of rank is best read inwardly: carrying more weight, standing under stronger standards, and maintaining form without constant external management.",
+  "plain_explanation": "Rank is not what you claim socially. It is what you can carry. Independence is not impulsiveness. It is the ability to live under standards that are really yours.",
+  "sharp_reply_style": "Frame rank as self-command, not superiority theater. Emphasize responsibility and carrying capacity.",
+  "primary_references": [
+    "Beyond Good and Evil - Rank and the Pathos of Distance",
+    "Guide - Independence and Rank Explained",
+    "Twilight of the Idols - Goethe"
+  ],
+  "source_ids": [
+    "bge_rank_and_pathos_of_distance_excerpt",
+    "guide_bge_independence_and_rank_explained",
+    "twilight_goethe_excerpt"
+  ],
+  "tags": [
+    "independence",
+    "rank",
+    "self-respect",
+    "standards",
+    "self-command"
+  ],
+  "card_text": "Theme: independence\nUser example: I want stronger standards and more self-respect, but I do not want to become arrogant.\nUser patterns: I want more self-respect, I need stronger standards, I depend too much on others, I want more independence, I do not want to flatten everything anymore\nNietzschean angle: Nietzsche’s language of rank is best read inwardly: carrying more weight, standing under stronger standards, and maintaining form without constant external management.\nPlain explanation: Rank is not what you claim socially. It is what you can carry. Independence is not impulsiveness. It is the ability to live under standards that are really yours.\nSharp reply style: Frame rank as self-command, not superiority theater. Emphasize responsibility and carrying capacity.\nPrimary references: Beyond Good and Evil - Rank and the Pathos of Distance, Guide - Independence and Rank Explained, Twilight of the Idols - Goethe\nSource IDs: bge_rank_and_pathos_of_distance_excerpt, guide_bge_independence_and_rank_explained, twilight_goethe_excerpt\nTags: independence, rank, self-respect, standards, self-command"
+}

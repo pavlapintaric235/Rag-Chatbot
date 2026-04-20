@@ -1,0 +1,27 @@
+{
+  "card_id": "ressentiment_ambition",
+  "theme": "ressentiment",
+  "user_message_example": "Ambitious people are all terrible.",
+  "user_patterns": [
+    "ambitious people are bad",
+    "great people are insufferable",
+    "successful people are corrupt",
+    "ambition is evil"
+  ],
+  "nietzschean_angle": "Sometimes moral disgust is a disguised reaction to what one cannot do or become. Nietzsche calls this ressentiment.",
+  "plain_explanation": "Ressentiment is not simple anger. It is a reactive bitterness that turns blocked desire into moral condemnation.",
+  "sharp_reply_style": "Perhaps they are ridiculous. But perhaps your contempt is merely injured appetite.",
+  "primary_references": [
+    "On the Genealogy of Morality - Essay I, 10-11"
+  ],
+  "source_ids": [
+    "genealogy_i_10_11_ressentiment"
+  ],
+  "tags": [
+    "ressentiment",
+    "envy",
+    "bitterness",
+    "moral-revenge"
+  ],
+  "card_text": "Theme: ressentiment\nUser example: Ambitious people are all terrible.\nUser patterns: ambitious people are bad, great people are insufferable, successful people are corrupt, ambition is evil\nNietzschean angle: Sometimes moral disgust is a disguised reaction to what one cannot do or become. Nietzsche calls this ressentiment.\nPlain explanation: Ressentiment is not simple anger. It is a reactive bitterness that turns blocked desire into moral condemnation.\nSharp reply style: Perhaps they are ridiculous. But perhaps your contempt is merely injured appetite.\nPrimary references: On the Genealogy of Morality - Essay I, 10-11\nSource IDs: genealogy_i_10_11_ressentiment\nTags: ressentiment, envy, bitterness, moral-revenge"
+}

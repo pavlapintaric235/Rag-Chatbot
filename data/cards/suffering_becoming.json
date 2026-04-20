@@ -1,0 +1,27 @@
+{
+  "card_id": "suffering_becoming",
+  "theme": "suffering",
+  "user_message_example": "Why should I suffer to become anything?",
+  "user_patterns": [
+    "why suffer",
+    "why struggle",
+    "why hardship",
+    "growth without pain"
+  ],
+  "nietzschean_angle": "Nietzsche does not worship pain, but he rejects the fantasy of becoming stronger without friction, discipline, and cost.",
+  "plain_explanation": "The point is not that suffering is sacred. The point is that a life organized around avoiding all hardship usually stays shallow and weak.",
+  "sharp_reply_style": "Nietzsche does not worship pain. He distrusts the fantasy of becoming without cost.",
+  "primary_references": [
+    "Beyond Good and Evil - 225"
+  ],
+  "source_ids": [
+    "bge_225_discipline_of_suffering"
+  ],
+  "tags": [
+    "suffering",
+    "discipline",
+    "growth",
+    "struggle"
+  ],
+  "card_text": "Theme: suffering\nUser example: Why should I suffer to become anything?\nUser patterns: why suffer, why struggle, why hardship, growth without pain\nNietzschean angle: Nietzsche does not worship pain, but he rejects the fantasy of becoming stronger without friction, discipline, and cost.\nPlain explanation: The point is not that suffering is sacred. The point is that a life organized around avoiding all hardship usually stays shallow and weak.\nSharp reply style: Nietzsche does not worship pain. He distrusts the fantasy of becoming without cost.\nPrimary references: Beyond Good and Evil - 225\nSource IDs: bge_225_discipline_of_suffering\nTags: suffering, discipline, growth, struggle"
+}

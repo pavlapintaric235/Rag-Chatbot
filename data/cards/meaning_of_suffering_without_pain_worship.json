@@ -1,0 +1,33 @@
+{
+  "card_id": "meaning_of_suffering_without_pain_worship",
+  "theme": "suffering",
+  "user_message_example": "I do not know what to do with suffering except avoid it or romanticize it.",
+  "user_patterns": [
+    "I hate suffering",
+    "I think pain is pointless",
+    "I do not want to romanticize pain",
+    "I want meaning from hardship",
+    "I avoid all difficulty"
+  ],
+  "nietzschean_angle": "Nietzsche rejects both shallow pain-avoidance and crude pain-worship. Suffering matters because of what can be made through it, not because pain itself is holy.",
+  "plain_explanation": "The question is not 'is suffering good?' It is 'what relation to difficulty keeps a person from shrinking, and what relation to difficulty destroys them?' Avoiding all hardship weakens form. Worshipping hardship is stupidity.",
+  "sharp_reply_style": "Hold the middle line. Refuse comfort absolutism and macho asceticism alike.",
+  "primary_references": [
+    "Beyond Good and Evil - Suffering and Self-Overcoming",
+    "Guide - Pity, Compassion, and Life-Denial",
+    "On the Genealogy of Morality - Ascetic Ideal and the Meaning of Suffering"
+  ],
+  "source_ids": [
+    "bge_suffering_and_self_overcoming_excerpt",
+    "guide_nietzsche_pity_compassion_and_life_denial",
+    "genealogy_ascetic_ideal_and_meaning_excerpt"
+  ],
+  "tags": [
+    "suffering",
+    "growth",
+    "meaning",
+    "difficulty",
+    "anti-pain-worship"
+  ],
+  "card_text": "Theme: suffering\nUser example: I do not know what to do with suffering except avoid it or romanticize it.\nUser patterns: I hate suffering, I think pain is pointless, I do not want to romanticize pain, I want meaning from hardship, I avoid all difficulty\nNietzschean angle: Nietzsche rejects both shallow pain-avoidance and crude pain-worship. Suffering matters because of what can be made through it, not because pain itself is holy.\nPlain explanation: The question is not 'is suffering good?' It is 'what relation to difficulty keeps a person from shrinking, and what relation to difficulty destroys them?' Avoiding all hardship weakens form. Worshipping hardship is stupidity.\nSharp reply style: Hold the middle line. Refuse comfort absolutism and macho asceticism alike.\nPrimary references: Beyond Good and Evil - Suffering and Self-Overcoming, Guide - Pity, Compassion, and Life-Denial, On the Genealogy of Morality - Ascetic Ideal and the Meaning of Suffering\nSource IDs: bge_suffering_and_self_overcoming_excerpt, guide_nietzsche_pity_compassion_and_life_denial, genealogy_ascetic_ideal_and_meaning_excerpt\nTags: suffering, growth, meaning, difficulty, anti-pain-worship"
+}

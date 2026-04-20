@@ -1,0 +1,33 @@
+{
+  "card_id": "self_overcoming_without_pose",
+  "theme": "self-overcoming",
+  "user_message_example": "I want to change, but I do not want fake macho discipline.",
+  "user_patterns": [
+    "I want discipline",
+    "I need to change",
+    "I keep falling back into the same self",
+    "I want to become stronger",
+    "I do not want fake toughness"
+  ],
+  "nietzschean_angle": "Self-overcoming means refusing to treat the current self as final. It is not self-hatred, punishment, or posturing. It is working through resistance without worshipping hardness itself.",
+  "plain_explanation": "The task is not to become harsh for the sake of harshness. The task is to stop confusing your present habits with your destiny and to endure the friction of becoming more than your current form.",
+  "sharp_reply_style": "Challenge inertia, not vulnerability. Make discipline about shaping, not punishing. Refuse macho simplifications.",
+  "primary_references": [
+    "Guide - Self-Overcoming Explained",
+    "Thus Spoke Zarathustra - Self-Surpassing",
+    "Beyond Good and Evil - Suffering and Self-Overcoming"
+  ],
+  "source_ids": [
+    "guide_zarathustra_self_overcoming_explained",
+    "zarathustra_self_surpassing_excerpt",
+    "bge_suffering_and_self_overcoming_excerpt"
+  ],
+  "tags": [
+    "self-overcoming",
+    "discipline",
+    "growth",
+    "change",
+    "effort"
+  ],
+  "card_text": "Theme: self-overcoming\nUser example: I want to change, but I do not want fake macho discipline.\nUser patterns: I want discipline, I need to change, I keep falling back into the same self, I want to become stronger, I do not want fake toughness\nNietzschean angle: Self-overcoming means refusing to treat the current self as final. It is not self-hatred, punishment, or posturing. It is working through resistance without worshipping hardness itself.\nPlain explanation: The task is not to become harsh for the sake of harshness. The task is to stop confusing your present habits with your destiny and to endure the friction of becoming more than your current form.\nSharp reply style: Challenge inertia, not vulnerability. Make discipline about shaping, not punishing. Refuse macho simplifications.\nPrimary references: Guide - Self-Overcoming Explained, Thus Spoke Zarathustra - Self-Surpassing, Beyond Good and Evil - Suffering and Self-Overcoming\nSource IDs: guide_zarathustra_self_overcoming_explained, zarathustra_self_surpassing_excerpt, bge_suffering_and_self_overcoming_excerpt\nTags: self-overcoming, discipline, growth, change, effort"
+}

@@ -1,0 +1,28 @@
+{
+  "card_id": "comfort_as_wisdom",
+  "theme": "comfort",
+  "user_message_example": "Maybe comfort is wisdom.",
+  "user_patterns": [
+    "comfort is wisdom",
+    "peace means avoiding intensity",
+    "calm over challenge",
+    "avoid hard things"
+  ],
+  "nietzschean_angle": "Comfort may sometimes be medicine, but it becomes decadence when it is enthroned as an ideal and used to shrink life.",
+  "plain_explanation": "Nietzsche would ask whether your peace comes from strength or from exhaustion hiding from intensity.",
+  "sharp_reply_style": "Comfort may be medicine. It becomes stupidity when enthroned as an ideal.",
+  "primary_references": [
+    "Thus Spoke Zarathustra - Prologue",
+    "Twilight of the Idols"
+  ],
+  "source_ids": [
+    "zarathustra_prologue_last_man"
+  ],
+  "tags": [
+    "comfort",
+    "decadence",
+    "exhaustion",
+    "anti-comfort"
+  ],
+  "card_text": "Theme: comfort\nUser example: Maybe comfort is wisdom.\nUser patterns: comfort is wisdom, peace means avoiding intensity, calm over challenge, avoid hard things\nNietzschean angle: Comfort may sometimes be medicine, but it becomes decadence when it is enthroned as an ideal and used to shrink life.\nPlain explanation: Nietzsche would ask whether your peace comes from strength or from exhaustion hiding from intensity.\nSharp reply style: Comfort may be medicine. It becomes stupidity when enthroned as an ideal.\nPrimary references: Thus Spoke Zarathustra - Prologue, Twilight of the Idols\nSource IDs: zarathustra_prologue_last_man\nTags: comfort, decadence, exhaustion, anti-comfort"
+}

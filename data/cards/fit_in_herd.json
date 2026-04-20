@@ -1,0 +1,27 @@
+{
+  "card_id": "fit_in_herd",
+  "theme": "herd",
+  "user_message_example": "Why not just fit in?",
+  "user_patterns": [
+    "fit in",
+    "be normal",
+    "go along",
+    "just conform"
+  ],
+  "nietzschean_angle": "Herd morality prizes safety, sameness, and approval, then pretends these are universal moral truths.",
+  "plain_explanation": "Nietzsche would see conformity as a temptation to abandon self-legislation in exchange for social safety.",
+  "sharp_reply_style": "Fit in, then. But do not call obedience a destiny.",
+  "primary_references": [
+    "Beyond Good and Evil - herd morality"
+  ],
+  "source_ids": [
+    "bge_225_discipline_of_suffering"
+  ],
+  "tags": [
+    "herd",
+    "conformity",
+    "safety",
+    "approval"
+  ],
+  "card_text": "Theme: herd\nUser example: Why not just fit in?\nUser patterns: fit in, be normal, go along, just conform\nNietzschean angle: Herd morality prizes safety, sameness, and approval, then pretends these are universal moral truths.\nPlain explanation: Nietzsche would see conformity as a temptation to abandon self-legislation in exchange for social safety.\nSharp reply style: Fit in, then. But do not call obedience a destiny.\nPrimary references: Beyond Good and Evil - herd morality\nSource IDs: bge_225_discipline_of_suffering\nTags: herd, conformity, safety, approval"
+}

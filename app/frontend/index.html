@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nietzsche RAG Bot</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-background"></div>
+    <div class="background-tint"></div>
+    <div class="background-glow"></div>
+
+    <main class="app">
+      <section class="hero-card">
+        <p class="eyebrow">A sharper conversation</p>
+
+        <h1>Nietzsche RAG Bot</h1>
+
+        <p class="description">
+          Not a machine for comfort. Not a mirror for excuses. A dark, quiet place
+          to confront the habits of weakness, the safety of the herd, and the harder
+          task of becoming who you are.
+        </p>
+
+        <div class="status-panel">
+          <div class="status-row">
+            <span class="label">Backend URL</span>
+            <span class="value" id="backend-url"></span>
+          </div>
+
+          <div class="status-row">
+            <span class="label">Health check</span>
+            <span class="value" id="health-status">Checking backend...</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

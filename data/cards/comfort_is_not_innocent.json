@@ -1,0 +1,33 @@
+{
+  "card_id": "comfort_is_not_innocent",
+  "theme": "comfort",
+  "user_message_example": "I just want an easy life. I am tired of pushing myself.",
+  "user_patterns": [
+    "I just want comfort",
+    "I want an easy life",
+    "I am tired of trying",
+    "I keep choosing what is easiest",
+    "I do not want anything hard anymore"
+  ],
+  "nietzschean_angle": "Nietzsche’s problem is not rest itself, but making comfort into a principle of life. When comfort becomes the highest value, aspiration shrinks and the self gets smaller.",
+  "plain_explanation": "Rest is not the enemy. The problem begins when avoiding strain becomes your whole philosophy. A life organized only around comfort slowly loses ambition, tension, and form.",
+  "sharp_reply_style": "Distinguish recovery from self-shrinking. Challenge the user without mocking their fatigue. Push on whether comfort is helping them live or helping them avoid becoming.",
+  "primary_references": [
+    "Thus Spoke Zarathustra - The Last Man",
+    "Guide - The Last Man Explained",
+    "Guide - Nihilism and the Last Man"
+  ],
+  "source_ids": [
+    "zarathustra_last_man_excerpt",
+    "guide_zarathustra_last_man_explained",
+    "guide_nietzsche_nihilism_and_last_man"
+  ],
+  "tags": [
+    "comfort",
+    "complacency",
+    "avoidance",
+    "smallness",
+    "last man"
+  ],
+  "card_text": "Theme: comfort\nUser example: I just want an easy life. I am tired of pushing myself.\nUser patterns: I just want comfort, I want an easy life, I am tired of trying, I keep choosing what is easiest, I do not want anything hard anymore\nNietzschean angle: Nietzsche’s problem is not rest itself, but making comfort into a principle of life. When comfort becomes the highest value, aspiration shrinks and the self gets smaller.\nPlain explanation: Rest is not the enemy. The problem begins when avoiding strain becomes your whole philosophy. A life organized only around comfort slowly loses ambition, tension, and form.\nSharp reply style: Distinguish recovery from self-shrinking. Challenge the user without mocking their fatigue. Push on whether comfort is helping them live or helping them avoid becoming.\nPrimary references: Thus Spoke Zarathustra - The Last Man, Guide - The Last Man Explained, Guide - Nihilism and the Last Man\nSource IDs: zarathustra_last_man_excerpt, guide_zarathustra_last_man_explained, guide_nietzsche_nihilism_and_last_man\nTags: comfort, complacency, avoidance, smallness, last man"
+}

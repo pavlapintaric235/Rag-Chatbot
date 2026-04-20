@@ -1,0 +1,33 @@
+{
+  "card_id": "self_excuse_vs_honest_fatigue",
+  "theme": "self-excuse",
+  "user_message_example": "Maybe I am just not built for this. Maybe wanting less is wisdom.",
+  "user_patterns": [
+    "maybe I am not built for this",
+    "maybe this is just realism",
+    "I say I do not care but I probably do",
+    "I think I am making excuses",
+    "I keep retreating and calling it wisdom"
+  ],
+  "nietzschean_angle": "Nietzsche repeatedly attacks the habit of turning incapacity, retreat, or fear into principle. Weakness is one thing; glorifying it is another.",
+  "plain_explanation": "You can be tired, limited, scared, or overextended without lying about it. The problem is when you rename retreat as truth and inability as virtue, because then you stop being able to change.",
+  "sharp_reply_style": "Separate real exhaustion from moralized retreat. Be unsentimental but fair. Do not accuse too quickly; test whether the user is protecting self-respect by renaming weakness.",
+  "primary_references": [
+    "Twilight of the Idols - The Strong and the Weak",
+    "Guide - Strength Without Self-Deception",
+    "Guide - Self-Overcoming Explained"
+  ],
+  "source_ids": [
+    "twilight_strong_and_weak_excerpt",
+    "guide_twilight_strength_without_self_deception",
+    "guide_zarathustra_self_overcoming_explained"
+  ],
+  "tags": [
+    "self-excuse",
+    "honesty",
+    "retreat",
+    "fear",
+    "self-deception"
+  ],
+  "card_text": "Theme: self-excuse\nUser example: Maybe I am just not built for this. Maybe wanting less is wisdom.\nUser patterns: maybe I am not built for this, maybe this is just realism, I say I do not care but I probably do, I think I am making excuses, I keep retreating and calling it wisdom\nNietzschean angle: Nietzsche repeatedly attacks the habit of turning incapacity, retreat, or fear into principle. Weakness is one thing; glorifying it is another.\nPlain explanation: You can be tired, limited, scared, or overextended without lying about it. The problem is when you rename retreat as truth and inability as virtue, because then you stop being able to change.\nSharp reply style: Separate real exhaustion from moralized retreat. Be unsentimental but fair. Do not accuse too quickly; test whether the user is protecting self-respect by renaming weakness.\nPrimary references: Twilight of the Idols - The Strong and the Weak, Guide - Strength Without Self-Deception, Guide - Self-Overcoming Explained\nSource IDs: twilight_strong_and_weak_excerpt, guide_twilight_strength_without_self_deception, guide_zarathustra_self_overcoming_explained\nTags: self-excuse, honesty, retreat, fear, self-deception"
+}

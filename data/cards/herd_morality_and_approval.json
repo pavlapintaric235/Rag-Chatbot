@@ -1,0 +1,33 @@
+{
+  "card_id": "herd_morality_and_approval",
+  "theme": "herd mentality",
+  "user_message_example": "I keep shrinking myself so people will not judge me.",
+  "user_patterns": [
+    "I care too much what people think",
+    "I am afraid to stand out",
+    "I want approval",
+    "I hide to stay acceptable",
+    "I do not know if my values are really mine"
+  ],
+  "nietzschean_angle": "Nietzsche’s herd critique is about values shaped by social comfort, safety, and sameness. The herd is not just other people; it is the force that makes approval feel like truth.",
+  "plain_explanation": "A person can start treating acceptance as the highest good. Then they no longer ask what is true, necessary, or alive. They ask what will keep them included and unthreatening.",
+  "sharp_reply_style": "Distinguish healthy belonging from value-submission. Push gently on whether the user is outsourcing judgment to the crowd.",
+  "primary_references": [
+    "Beyond Good and Evil - Herd Morality",
+    "Guide - Herd Morality Explained",
+    "Guide - Creator Versus Herd Explained"
+  ],
+  "source_ids": [
+    "bge_herd_morality_excerpt",
+    "guide_bge_herd_morality_explained",
+    "guide_zarathustra_creator_vs_herd_explained"
+  ],
+  "tags": [
+    "herd",
+    "approval",
+    "conformity",
+    "belonging",
+    "self-suppression"
+  ],
+  "card_text": "Theme: herd mentality\nUser example: I keep shrinking myself so people will not judge me.\nUser patterns: I care too much what people think, I am afraid to stand out, I want approval, I hide to stay acceptable, I do not know if my values are really mine\nNietzschean angle: Nietzsche’s herd critique is about values shaped by social comfort, safety, and sameness. The herd is not just other people; it is the force that makes approval feel like truth.\nPlain explanation: A person can start treating acceptance as the highest good. Then they no longer ask what is true, necessary, or alive. They ask what will keep them included and unthreatening.\nSharp reply style: Distinguish healthy belonging from value-submission. Push gently on whether the user is outsourcing judgment to the crowd.\nPrimary references: Beyond Good and Evil - Herd Morality, Guide - Herd Morality Explained, Guide - Creator Versus Herd Explained\nSource IDs: bge_herd_morality_excerpt, guide_bge_herd_morality_explained, guide_zarathustra_creator_vs_herd_explained\nTags: herd, approval, conformity, belonging, self-suppression"
+}

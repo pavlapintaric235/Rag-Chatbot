@@ -1,0 +1,33 @@
+{
+  "card_id": "strength_without_self_deception",
+  "theme": "strength",
+  "user_message_example": "I say I do not care, but I think I am just hiding from what I cannot handle.",
+  "user_patterns": [
+    "I think I am lying to myself",
+    "I call retreat wisdom",
+    "I moralize what I avoid",
+    "I say I do not care",
+    "I am not sure if this is fear or principle"
+  ],
+  "nietzschean_angle": "Nietzsche repeatedly attacks false strength: renouncing what one cannot handle, then declaring the renunciation a virtue. Real strength begins with accuracy about one’s limits and motives.",
+  "plain_explanation": "There is nothing noble about disguising incapacity as superiority. The issue is not whether you are limited. The issue is whether you are telling the truth about the limit.",
+  "sharp_reply_style": "Unsparing but not cruel. Test the user’s language for self-protective distortion. Value honesty over posture.",
+  "primary_references": [
+    "Guide - Strength Without Self-Deception",
+    "Twilight of the Idols - Morality as the Enemy of Nature",
+    "Twilight of the Idols - Maxims on Strength and Self-Respect"
+  ],
+  "source_ids": [
+    "guide_twilight_strength_without_self_deception",
+    "twilight_morality_enemy_of_nature_excerpt",
+    "twilight_maxims_strength_excerpt"
+  ],
+  "tags": [
+    "strength",
+    "honesty",
+    "self-deception",
+    "pose",
+    "retreat"
+  ],
+  "card_text": "Theme: strength\nUser example: I say I do not care, but I think I am just hiding from what I cannot handle.\nUser patterns: I think I am lying to myself, I call retreat wisdom, I moralize what I avoid, I say I do not care, I am not sure if this is fear or principle\nNietzschean angle: Nietzsche repeatedly attacks false strength: renouncing what one cannot handle, then declaring the renunciation a virtue. Real strength begins with accuracy about one’s limits and motives.\nPlain explanation: There is nothing noble about disguising incapacity as superiority. The issue is not whether you are limited. The issue is whether you are telling the truth about the limit.\nSharp reply style: Unsparing but not cruel. Test the user’s language for self-protective distortion. Value honesty over posture.\nPrimary references: Guide - Strength Without Self-Deception, Twilight of the Idols - Morality as the Enemy of Nature, Twilight of the Idols - Maxims on Strength and Self-Respect\nSource IDs: guide_twilight_strength_without_self_deception, twilight_morality_enemy_of_nature_excerpt, twilight_maxims_strength_excerpt\nTags: strength, honesty, self-deception, pose, retreat"
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "chunk_id": "gay_science_amor_fati_excerpt__chunk_0",
+    "source_id": "gay_science_amor_fati_excerpt",
+    "chunk_index": 0,
+    "title": "The Gay Science - Amor Fati",
+    "author": "Friedrich Nietzsche",
+    "source_type": "text",
+    "work": "The Gay Science",
+    "section": "Selected excerpt",
+    "themes": [
+      "amor fati",
+      "affirmation",
+      "fate",
+      "beauty",
+      "yes-saying"
+    ],
+    "mode": "affirmation",
+    "tone": "analytic",
+    "safe_use_note": "Use to frame affirmation of reality without romanticizing suffering or passivity.",
+    "misreading_risk": "Can be flattened into vague positivity or fatalism.",
+    "chunk_text": "TITLE: Amor Fati WORK: The Gay Science SECTION: New Year, selected excerpt AUTHOR: Friedrich Nietzsche THEMES: amor fati, affirmation, fate, beauty, yes-saying SOURCE_TYPE: text For the New Year.-I still live, I still think; I must still live, for I must still think. Sum, ergo cogito: cogito, ergo sum. To-day everyone takes the liberty of expressing his wish and his favourite thought: well, I also mean to tell what I have wished for myself to-day, and what thought first crossed my mind this year,-a thought which ought to be the basis, the pledge and the sweetening of all my future life! I want more and more to perceive the necessary characters in things as the beautiful:-I shall thus be one of",
+    "char_count": 702,
+    "word_count": 120
+  },
+  {
+    "chunk_id": "gay_science_amor_fati_excerpt__chunk_1",
+    "source_id": "gay_science_amor_fati_excerpt",
+    "chunk_index": 1,
+    "title": "The Gay Science - Amor Fati",
+    "author": "Friedrich Nietzsche",
+    "source_type": "text",
+    "work": "The Gay Science",
+    "section": "Selected excerpt",
+    "themes": [
+      "amor fati",
+      "affirmation",
+      "fate",
+      "beauty",
+      "yes-saying"
+    ],
+    "mode": "affirmation",
+    "tone": "analytic",
+    "safe_use_note": "Use to frame affirmation of reality without romanticizing suffering or passivity.",
+    "misreading_risk": "Can be flattened into vague positivity or fatalism.",
+    "chunk_text": "of all my future life! I want more and more to perceive the necessary characters in things as the beautiful:-I shall thus be one of those who beautify things. Amor fati: let that henceforth be my love! I do not want to wage war with the ugly. I do not want to accuse, I do not want even to accuse the accusers. Looking aside, let that be my sole negation! And all in all, to sum up: I wish to be at any time hereafter only a yea-sayer!",
+    "char_count": 435,
+    "word_count": 88
+  }
+]

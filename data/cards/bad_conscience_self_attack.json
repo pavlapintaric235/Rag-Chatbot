@@ -1,0 +1,33 @@
+{
+  "card_id": "bad_conscience_self_attack",
+  "theme": "bad conscience",
+  "user_message_example": "Every mistake I make turns into proof that I am rotten.",
+  "user_patterns": [
+    "I keep beating myself up",
+    "I feel guilty all the time",
+    "my conscience is eating me alive",
+    "I punish myself for mistakes",
+    "I cannot move on from guilt"
+  ],
+  "nietzschean_angle": "Nietzsche sees bad conscience as force turned inward. Instead of acting, confronting, or creating, the person becomes their own prison, judge, and executioner.",
+  "plain_explanation": "This is not healthy responsibility. It is self-attack becoming a way of life. Guilt starts to feel like seriousness, even when it no longer leads to repair or action.",
+  "sharp_reply_style": "Separate responsibility from self-devouring. Challenge the use of guilt as identity or self-occupation. Do not offer cheap soothing.",
+  "primary_references": [
+    "On the Genealogy of Morality - Bad Conscience and Internalization",
+    "Guide - Bad Conscience Explained",
+    "Guide - Genealogy, Master and Slave Morality, and Bad Conscience"
+  ],
+  "source_ids": [
+    "genealogy_bad_conscience_excerpt",
+    "guide_genealogy_bad_conscience_explained",
+    "guide_nietzsche_genealogy_master_slave_bad_conscience"
+  ],
+  "tags": [
+    "bad conscience",
+    "guilt",
+    "self-punishment",
+    "internalization",
+    "shame"
+  ],
+  "card_text": "Theme: bad conscience\nUser example: Every mistake I make turns into proof that I am rotten.\nUser patterns: I keep beating myself up, I feel guilty all the time, my conscience is eating me alive, I punish myself for mistakes, I cannot move on from guilt\nNietzschean angle: Nietzsche sees bad conscience as force turned inward. Instead of acting, confronting, or creating, the person becomes their own prison, judge, and executioner.\nPlain explanation: This is not healthy responsibility. It is self-attack becoming a way of life. Guilt starts to feel like seriousness, even when it no longer leads to repair or action.\nSharp reply style: Separate responsibility from self-devouring. Challenge the use of guilt as identity or self-occupation. Do not offer cheap soothing.\nPrimary references: On the Genealogy of Morality - Bad Conscience and Internalization, Guide - Bad Conscience Explained, Guide - Genealogy, Master and Slave Morality, and Bad Conscience\nSource IDs: genealogy_bad_conscience_excerpt, guide_genealogy_bad_conscience_explained, guide_nietzsche_genealogy_master_slave_bad_conscience\nTags: bad conscience, guilt, self-punishment, internalization, shame"
+}

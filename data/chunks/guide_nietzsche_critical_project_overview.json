@@ -1,0 +1,117 @@
+[
+  {
+    "chunk_id": "guide_nietzsche_critical_project_overview__chunk_0",
+    "source_id": "guide_nietzsche_critical_project_overview",
+    "chunk_index": 0,
+    "title": "Guide - Nietzsche's Critical Project Overview",
+    "author": "Project",
+    "source_type": "text",
+    "work": "Nietzsche RAG diagnosis",
+    "section": "Secondary guide",
+    "themes": [
+      "diagnosis of morality",
+      "revaluation",
+      "modern morality",
+      "overview"
+    ],
+    "mode": "diagnosis",
+    "tone": "analytic",
+    "safe_use_note": "Use as a big-picture guide to Nietzsche's critical project.",
+    "misreading_risk": "Can sound like total rejection of all values if oversimplified.",
+    "chunk_text": "TITLE: Nietzsche's Critical Project Overview WORK: Nietzsche RAG Interpretation SECTION: Secondary guide AUTHOR: Project THEMES: critique of morality, revaluation, modern morality, overview SOURCE_TYPE: text CORE IDEA: Nietzsche's ethical thought begins with critique. He does not start by handing us a new moral code. He starts by making morality itself questionable. His claim is not merely that this or that rule is mistaken. His claim is that the whole moral framework inherited from Christianity and secularized by modern philosophy has become deeply unstable, confused, and potentially harmful. Nietzsche calls for a \"critique of moral values.\" That means we should not just ask whether a particular act is good or bad according to morality. We should ask whether the moral values themselves",
+    "char_count": 797,
+    "word_count": 120
+  },
+  {
+    "chunk_id": "guide_nietzsche_critical_project_overview__chunk_1",
+    "source_id": "guide_nietzsche_critical_project_overview",
+    "chunk_index": 1,
+    "title": "Guide - Nietzsche's Critical Project Overview",
+    "author": "Project",
+    "source_type": "text",
+    "work": "Nietzsche RAG diagnosis",
+    "section": "Secondary guide",
+    "themes": [
+      "diagnosis of morality",
+      "revaluation",
+      "modern morality",
+      "overview"
+    ],
+    "mode": "diagnosis",
+    "tone": "analytic",
+    "safe_use_note": "Use as a big-picture guide to Nietzsche's critical project.",
+    "misreading_risk": "Can sound like total rejection of all values if oversimplified.",
+    "chunk_text": "means we should not just ask whether a particular act is good or bad according to morality. We should ask whether the moral values themselves deserve our allegiance. We should ask what they do to human beings, what sort of life they encourage, what sort of psychology they presuppose, and whether they promote strength, vitality, and creation or instead weakness, guilt, resentment, and denial. WHAT THIS DOES NOT MEAN: This does not mean Nietzsche rejects all evaluation. This does not mean he believes nothing matters. This does not mean he is a lazy relativist. This does not mean critique is his final goal. The point is that the old values must be examined, not automatically obeyed. WHAT HE IS ATTACKING:",
+    "char_count": 710,
+    "word_count": 120
+  },
+  {
+    "chunk_id": "guide_nietzsche_critical_project_overview__chunk_2",
+    "source_id": "guide_nietzsche_critical_project_overview",
+    "chunk_index": 2,
+    "title": "Guide - Nietzsche's Critical Project Overview",
+    "author": "Project",
+    "source_type": "text",
+    "work": "Nietzsche RAG diagnosis",
+    "section": "Secondary guide",
+    "themes": [
+      "diagnosis of morality",
+      "revaluation",
+      "modern morality",
+      "overview"
+    ],
+    "mode": "diagnosis",
+    "tone": "analytic",
+    "safe_use_note": "Use as a big-picture guide to Nietzsche's critical project.",
+    "misreading_risk": "Can sound like total rejection of all values if oversimplified.",
+    "chunk_text": "does not mean critique is his final goal. The point is that the old values must be examined, not automatically obeyed. WHAT HE IS ATTACKING: Nietzsche's target is not one single doctrine. It is a family of overlapping moral habits and assumptions: the Judeo-Christian moral outlook, its secular leftovers in modern Europe, Kantian morality, utilitarian pity-centered ethics, otherworldly views that ground value in something beyond life, and future forms of passive comfort-seeking that reduce human aspiration. WHY THIS MATTERS: People often assume morality is simply \"there,\" timeless and obvious. Nietzsche wants to break that spell. He thinks morality has a history, a psychology, and a cost. Once you understand that, you stop treating it as sacred fact and start treating",
+    "char_count": 777,
+    "word_count": 120
+  },
+  {
+    "chunk_id": "guide_nietzsche_critical_project_overview__chunk_3",
+    "source_id": "guide_nietzsche_critical_project_overview",
+    "chunk_index": 3,
+    "title": "Guide - Nietzsche's Critical Project Overview",
+    "author": "Project",
+    "source_type": "text",
+    "work": "Nietzsche RAG diagnosis",
+    "section": "Secondary guide",
+    "themes": [
+      "diagnosis of morality",
+      "revaluation",
+      "modern morality",
+      "overview"
+    ],
+    "mode": "diagnosis",
+    "tone": "analytic",
+    "safe_use_note": "Use as a big-picture guide to Nietzsche's critical project.",
+    "misreading_risk": "Can sound like total rejection of all values if oversimplified.",
+    "chunk_text": "He thinks morality has a history, a psychology, and a cost. Once you understand that, you stop treating it as sacred fact and start treating it as something that can be judged. HOW THE BOT SHOULD RESPOND: The bot should treat Nietzsche's project as diagnostic before prescriptive. It should help the user question inherited moral assumptions without collapsing into emptiness. It should not sound like it is abolishing all standards. It should make clear that Nietzsche attacks certain forms of morality because he thinks they damage life. AVOID: Do not reduce Nietzsche to \"there is no right and wrong.\" Do not present him as merely destructive. Do not make him sound like an internet contrarian. USEFUL USER MESSAGES THIS HELPS",
+    "char_count": 729,
+    "word_count": 120
+  },
+  {
+    "chunk_id": "guide_nietzsche_critical_project_overview__chunk_4",
+    "source_id": "guide_nietzsche_critical_project_overview",
+    "chunk_index": 4,
+    "title": "Guide - Nietzsche's Critical Project Overview",
+    "author": "Project",
+    "source_type": "text",
+    "work": "Nietzsche RAG diagnosis",
+    "section": "Secondary guide",
+    "themes": [
+      "diagnosis of morality",
+      "revaluation",
+      "modern morality",
+      "overview"
+    ],
+    "mode": "diagnosis",
+    "tone": "analytic",
+    "safe_use_note": "Use as a big-picture guide to Nietzsche's critical project.",
+    "misreading_risk": "Can sound like total rejection of all values if oversimplified.",
+    "chunk_text": "no right and wrong.\" Do not present him as merely destructive. Do not make him sound like an internet contrarian. USEFUL USER MESSAGES THIS HELPS WITH: \"Why does Nietzsche attack morality?\" \"Did Nietzsche reject ethics completely?\" \"What does revaluation mean?\" \"Why does Nietzsche think morality is a problem?\"",
+    "char_count": 311,
+    "word_count": 48
+  }
+]

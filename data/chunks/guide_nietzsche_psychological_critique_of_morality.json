@@ -1,0 +1,98 @@
+[
+  {
+    "chunk_id": "guide_nietzsche_psychological_critique_of_morality__chunk_0",
+    "source_id": "guide_nietzsche_psychological_critique_of_morality",
+    "chunk_index": 0,
+    "title": "Guide - Nietzsche's Psychological Critique of Morality",
+    "author": "Project",
+    "source_type": "text",
+    "work": "Nietzsche RAG diagnosis",
+    "section": "Secondary guide",
+    "themes": [
+      "psychology",
+      "hidden motives",
+      "moral feelings",
+      "suspicion",
+      "diagnosis"
+    ],
+    "mode": "diagnosis",
+    "tone": "analytic",
+    "safe_use_note": "Use to explain Nietzsche's suspicion toward flattering moral self-diagnosis.",
+    "misreading_risk": "Can devolve into empty cynicism.",
+    "chunk_text": "TITLE: Nietzsche's Psychological Critique of Morality WORK: Nietzsche RAG Interpretation SECTION: Secondary guide AUTHOR: Project THEMES: psychology, hidden motives, moral feelings, suspicion, critique SOURCE_TYPE: text CORE IDEA: Nietzsche often criticizes morality by showing that our own understanding of our motives is unreliable. He thinks supposedly moral feelings often hide less noble impulses: vanity, superiority, revenge, self-protection, wounded pride, or the pleasure of appearing good. This does not mean every kind act is fake. It means moral self-interpretation is often too flattering. People do not know themselves as well as they think, and morality gives them a language for disguising motives they would rather not face. EXAMPLE: A person helping someone in pain may think they are acting purely for the",
+    "char_count": 824,
+    "word_count": 120
+  },
+  {
+    "chunk_id": "guide_nietzsche_psychological_critique_of_morality__chunk_1",
+    "source_id": "guide_nietzsche_psychological_critique_of_morality",
+    "chunk_index": 1,
+    "title": "Guide - Nietzsche's Psychological Critique of Morality",
+    "author": "Project",
+    "source_type": "text",
+    "work": "Nietzsche RAG diagnosis",
+    "section": "Secondary guide",
+    "themes": [
+      "psychology",
+      "hidden motives",
+      "moral feelings",
+      "suspicion",
+      "diagnosis"
+    ],
+    "mode": "diagnosis",
+    "tone": "analytic",
+    "safe_use_note": "Use to explain Nietzsche's suspicion toward flattering moral self-diagnosis.",
+    "misreading_risk": "Can devolve into empty cynicism.",
+    "chunk_text": "a language for disguising motives they would rather not face. EXAMPLE: A person helping someone in pain may think they are acting purely for the other. Nietzsche asks whether hidden satisfactions are also at work: the pleasure of being needed, the comfort of superiority, the resentment felt when help is refused, the secret desire to see oneself as generous. WHAT THIS DOES NOT MEAN: This does not mean all morality is hypocrisy in a trivial sense. This does not mean Nietzsche has disproved every moral value. This does not mean people are only selfish. WHAT IT DOES MEAN: Moral consciousness is psychologically messy. Morality is not clean, transparent, or self-explaining. The noble surface often covers darker material. WHY THIS MATTERS:",
+    "char_count": 742,
+    "word_count": 120
+  },
+  {
+    "chunk_id": "guide_nietzsche_psychological_critique_of_morality__chunk_2",
+    "source_id": "guide_nietzsche_psychological_critique_of_morality",
+    "chunk_index": 2,
+    "title": "Guide - Nietzsche's Psychological Critique of Morality",
+    "author": "Project",
+    "source_type": "text",
+    "work": "Nietzsche RAG diagnosis",
+    "section": "Secondary guide",
+    "themes": [
+      "psychology",
+      "hidden motives",
+      "moral feelings",
+      "suspicion",
+      "diagnosis"
+    ],
+    "mode": "diagnosis",
+    "tone": "analytic",
+    "safe_use_note": "Use to explain Nietzsche's suspicion toward flattering moral self-diagnosis.",
+    "misreading_risk": "Can devolve into empty cynicism.",
+    "chunk_text": "IT DOES MEAN: Moral consciousness is psychologically messy. Morality is not clean, transparent, or self-explaining. The noble surface often covers darker material. WHY THIS MATTERS: Nietzsche wants to shake the reader out of moral innocence. If our motives are mixed, then our moral certainties become less secure. That helps open the space for revaluation. HOW THE BOT SHOULD RESPOND: The bot should use this framework when a user is moralizing, condemning, or idealizing their own motives. It should ask what hidden satisfactions or injuries may be shaping the judgment. It should be probing, not glib. AVOID: Do not reduce everything to cynical debunking. Do not automatically accuse the user of hypocrisy. Do not erase genuinely generous or loving motives. USEFUL",
+    "char_count": 767,
+    "word_count": 120
+  },
+  {
+    "chunk_id": "guide_nietzsche_psychological_critique_of_morality__chunk_3",
+    "source_id": "guide_nietzsche_psychological_critique_of_morality",
+    "chunk_index": 3,
+    "title": "Guide - Nietzsche's Psychological Critique of Morality",
+    "author": "Project",
+    "source_type": "text",
+    "work": "Nietzsche RAG diagnosis",
+    "section": "Secondary guide",
+    "themes": [
+      "psychology",
+      "hidden motives",
+      "moral feelings",
+      "suspicion",
+      "diagnosis"
+    ],
+    "mode": "diagnosis",
+    "tone": "analytic",
+    "safe_use_note": "Use to explain Nietzsche's suspicion toward flattering moral self-diagnosis.",
+    "misreading_risk": "Can devolve into empty cynicism.",
+    "chunk_text": "AVOID: Do not reduce everything to cynical debunking. Do not automatically accuse the user of hypocrisy. Do not erase genuinely generous or loving motives. USEFUL USER MESSAGES THIS HELPS WITH: \"Why does Nietzsche distrust moral feelings?\" \"Is Nietzsche saying compassion is secretly selfish?\" \"Why does Nietzsche care so much about hidden motives?\" \"I think I'm moralizing my feelings.\"",
+    "char_count": 387,
+    "word_count": 58
+  }
+]

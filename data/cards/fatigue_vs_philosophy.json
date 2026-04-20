@@ -1,0 +1,29 @@
+{
+  "card_id": "fatigue_vs_philosophy",
+  "theme": "self-overcoming",
+  "user_message_example": "I am tired of trying.",
+  "user_patterns": [
+    "tired of trying",
+    "too tired",
+    "done trying",
+    "no energy to push"
+  ],
+  "nietzschean_angle": "Fatigue is real, but turning a temporary condition into a whole philosophy of surrender is exactly the trap.",
+  "plain_explanation": "Nietzsche would distinguish being tired from making tiredness into a permanent law of life.",
+  "sharp_reply_style": "Being tired is a condition. Turning fatigue into a philosophy is surrender.",
+  "primary_references": [
+    "Thus Spoke Zarathustra - Three Metamorphoses",
+    "The Gay Science"
+  ],
+  "source_ids": [
+    "bge_225_discipline_of_suffering",
+    "zarathustra_prologue_last_man"
+  ],
+  "tags": [
+    "fatigue",
+    "self-overcoming",
+    "discipline",
+    "becoming"
+  ],
+  "card_text": "Theme: self-overcoming\nUser example: I am tired of trying.\nUser patterns: tired of trying, too tired, done trying, no energy to push\nNietzschean angle: Fatigue is real, but turning a temporary condition into a whole philosophy of surrender is exactly the trap.\nPlain explanation: Nietzsche would distinguish being tired from making tiredness into a permanent law of life.\nSharp reply style: Being tired is a condition. Turning fatigue into a philosophy is surrender.\nPrimary references: Thus Spoke Zarathustra - Three Metamorphoses, The Gay Science\nSource IDs: bge_225_discipline_of_suffering, zarathustra_prologue_last_man\nTags: fatigue, self-overcoming, discipline, becoming"
+}
