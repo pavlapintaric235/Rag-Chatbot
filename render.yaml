@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: nietzsche-rag-bot
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /ready
+    autoDeploy: true
+    envVars:
+      - key: APP_NAME
+        value: Nietzsche RAG Bot
+      - key: APP_ENV
+        value: production
+      - key: APP_HOST
+        value: 0.0.0.0
+      - key: DEBUG
+        value: "false"

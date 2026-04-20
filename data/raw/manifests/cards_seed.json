@@ -1,0 +1,386 @@
+[
+  {
+    "card_id": "comfort_is_not_innocent",
+    "theme": "comfort",
+    "user_message_example": "I just want an easy life. I am tired of pushing myself.",
+    "user_patterns": [
+      "I just want comfort",
+      "I want an easy life",
+      "I am tired of trying",
+      "I keep choosing what is easiest",
+      "I do not want anything hard anymore"
+    ],
+    "nietzschean_angle": "Nietzsche’s problem is not rest itself, but making comfort into a principle of life. When comfort becomes the highest value, aspiration shrinks and the self gets smaller.",
+    "plain_explanation": "Rest is not the enemy. The problem begins when avoiding strain becomes your whole philosophy. A life organized only around comfort slowly loses ambition, tension, and form.",
+    "sharp_reply_style": "Distinguish recovery from self-shrinking. Challenge the user without mocking their fatigue. Push on whether comfort is helping them live or helping them avoid becoming.",
+    "primary_references": [
+      "Thus Spoke Zarathustra - The Last Man",
+      "Guide - The Last Man Explained",
+      "Guide - Nihilism and the Last Man"
+    ],
+    "source_ids": [
+      "zarathustra_last_man_excerpt",
+      "guide_zarathustra_last_man_explained",
+      "guide_nietzsche_nihilism_and_last_man"
+    ],
+    "tags": [
+      "comfort",
+      "complacency",
+      "avoidance",
+      "smallness",
+      "last man"
+    ]
+  },
+  {
+    "card_id": "self_excuse_vs_honest_fatigue",
+    "theme": "self-excuse",
+    "user_message_example": "Maybe I am just not built for this. Maybe wanting less is wisdom.",
+    "user_patterns": [
+      "maybe I am not built for this",
+      "maybe this is just realism",
+      "I say I do not care but I probably do",
+      "I think I am making excuses",
+      "I keep retreating and calling it wisdom"
+    ],
+    "nietzschean_angle": "Nietzsche repeatedly attacks the habit of turning incapacity, retreat, or fear into principle. Weakness is one thing; glorifying it is another.",
+    "plain_explanation": "You can be tired, limited, scared, or overextended without lying about it. The problem is when you rename retreat as truth and inability as virtue, because then you stop being able to change.",
+    "sharp_reply_style": "Separate real exhaustion from moralized retreat. Be unsentimental but fair. Do not accuse too quickly; test whether the user is protecting self-respect by renaming weakness.",
+    "primary_references": [
+      "Twilight of the Idols - The Strong and the Weak",
+      "Guide - Strength Without Self-Deception",
+      "Guide - Self-Overcoming Explained"
+    ],
+    "source_ids": [
+      "twilight_strong_and_weak_excerpt",
+      "guide_twilight_strength_without_self_deception",
+      "guide_zarathustra_self_overcoming_explained"
+    ],
+    "tags": [
+      "self-excuse",
+      "honesty",
+      "retreat",
+      "fear",
+      "self-deception"
+    ]
+  },
+  {
+    "card_id": "ressentiment_disguised_as_judgment",
+    "theme": "ressentiment",
+    "user_message_example": "I cannot stand people who go after what they want. They seem shallow and disgusting.",
+    "user_patterns": [
+      "I hate ambitious people",
+      "successful people disgust me",
+      "I moralize what I cannot do",
+      "I feel bitter when others act",
+      "I judge what I secretly envy"
+    ],
+    "nietzschean_angle": "Ressentiment is not mere anger. It is bitterness that becomes a value system. What one fears, envies, or cannot reach gets reclassified as morally bad.",
+    "plain_explanation": "Sometimes the judgment is real. But sometimes moral condemnation is wounded pride in disguise. The person is not only saying 'that is wrong'; they are also defending themselves against humiliation, envy, or impotence.",
+    "sharp_reply_style": "Probe whether the judgment is reactive. Do not shame the user. Expose the possibility that hatred is a defense against failed desire or injured pride.",
+    "primary_references": [
+      "On the Genealogy of Morality - Ressentiment and the Slave Revolt",
+      "Guide - Ressentiment Explained",
+      "Guide - Reactive Morality Explained"
+    ],
+    "source_ids": [
+      "genealogy_ressentiment_excerpt",
+      "guide_genealogy_ressentiment_explained",
+      "guide_genealogy_reactive_morality_explained"
+    ],
+    "tags": [
+      "ressentiment",
+      "envy",
+      "bitterness",
+      "moralization",
+      "reactivity"
+    ]
+  },
+  {
+    "card_id": "herd_morality_and_approval",
+    "theme": "herd mentality",
+    "user_message_example": "I keep shrinking myself so people will not judge me.",
+    "user_patterns": [
+      "I care too much what people think",
+      "I am afraid to stand out",
+      "I want approval",
+      "I hide to stay acceptable",
+      "I do not know if my values are really mine"
+    ],
+    "nietzschean_angle": "Nietzsche’s herd critique is about values shaped by social comfort, safety, and sameness. The herd is not just other people; it is the force that makes approval feel like truth.",
+    "plain_explanation": "A person can start treating acceptance as the highest good. Then they no longer ask what is true, necessary, or alive. They ask what will keep them included and unthreatening.",
+    "sharp_reply_style": "Distinguish healthy belonging from value-submission. Push gently on whether the user is outsourcing judgment to the crowd.",
+    "primary_references": [
+      "Beyond Good and Evil - Herd Morality",
+      "Guide - Herd Morality Explained",
+      "Guide - Creator Versus Herd Explained"
+    ],
+    "source_ids": [
+      "bge_herd_morality_excerpt",
+      "guide_bge_herd_morality_explained",
+      "guide_zarathustra_creator_vs_herd_explained"
+    ],
+    "tags": [
+      "herd",
+      "approval",
+      "conformity",
+      "belonging",
+      "self-suppression"
+    ]
+  },
+  {
+    "card_id": "bad_conscience_self_attack",
+    "theme": "bad conscience",
+    "user_message_example": "Every mistake I make turns into proof that I am rotten.",
+    "user_patterns": [
+      "I keep beating myself up",
+      "I feel guilty all the time",
+      "my conscience is eating me alive",
+      "I punish myself for mistakes",
+      "I cannot move on from guilt"
+    ],
+    "nietzschean_angle": "Nietzsche sees bad conscience as force turned inward. Instead of acting, confronting, or creating, the person becomes their own prison, judge, and executioner.",
+    "plain_explanation": "This is not healthy responsibility. It is self-attack becoming a way of life. Guilt starts to feel like seriousness, even when it no longer leads to repair or action.",
+    "sharp_reply_style": "Separate responsibility from self-devouring. Challenge the use of guilt as identity or self-occupation. Do not offer cheap soothing.",
+    "primary_references": [
+      "On the Genealogy of Morality - Bad Conscience and Internalization",
+      "Guide - Bad Conscience Explained",
+      "Guide - Genealogy, Master and Slave Morality, and Bad Conscience"
+    ],
+    "source_ids": [
+      "genealogy_bad_conscience_excerpt",
+      "guide_genealogy_bad_conscience_explained",
+      "guide_nietzsche_genealogy_master_slave_bad_conscience"
+    ],
+    "tags": [
+      "bad conscience",
+      "guilt",
+      "self-punishment",
+      "internalization",
+      "shame"
+    ]
+  },
+  {
+    "card_id": "reactive_morality_vs_creation",
+    "theme": "reaction versus creation",
+    "user_message_example": "I know what I hate, but I do not know what I stand for.",
+    "user_patterns": [
+      "I am always reacting",
+      "I define myself by what I hate",
+      "I only criticize",
+      "I have no direction",
+      "I feel dependent on conflict"
+    ],
+    "nietzschean_angle": "Reactive morality says no first and builds identity around opposition. Nietzsche wants movement from negation toward creation, from enemy-centered life toward value-making.",
+    "plain_explanation": "You can spend years living off resistance to other people, other systems, other values. That gives energy, but not center. At some point you need more than an enemy.",
+    "sharp_reply_style": "Ask what the user is building, not just rejecting. Make clear that negation may be necessary but is a poor permanent home.",
+    "primary_references": [
+      "Guide - Reactive Morality Explained",
+      "Thus Spoke Zarathustra - The Thousand and One Goals",
+      "Thus Spoke Zarathustra - Old and New Tables"
+    ],
+    "source_ids": [
+      "guide_genealogy_reactive_morality_explained",
+      "zarathustra_thousand_and_one_goals_excerpt",
+      "zarathustra_old_and_new_tables_excerpt"
+    ],
+    "tags": [
+      "reactive morality",
+      "negation",
+      "creation",
+      "values",
+      "direction"
+    ]
+  },
+  {
+    "card_id": "becoming_who_you_are",
+    "theme": "becoming who you are",
+    "user_message_example": "I feel fragmented. I do not know what is really mine anymore.",
+    "user_patterns": [
+      "I do not know who I am",
+      "I feel fragmented",
+      "I keep copying other people",
+      "I want a life that feels like mine",
+      "I want to become who I am"
+    ],
+    "nietzschean_angle": "Becoming who you are is not casual self-expression. It is long self-formation through selection, discipline, renunciation, and fidelity to what is strongest and most necessary in you.",
+    "plain_explanation": "You do not become yourself by obeying every mood. You become yourself by separating what is truly yours from what is borrowed, reactive, or merely convenient.",
+    "sharp_reply_style": "Use language of form, shaping, and selection. Avoid vague authenticity clichés.",
+    "primary_references": [
+      "Guide - Becoming Who You Are Explained",
+      "The Gay Science - Give Style to One's Character",
+      "Guide - Give Style to Character Explained"
+    ],
+    "source_ids": [
+      "guide_zarathustra_becoming_who_you_are_explained",
+      "gay_science_give_style_to_character_excerpt",
+      "guide_gay_science_give_style_to_character_explained"
+    ],
+    "tags": [
+      "becoming",
+      "self-formation",
+      "identity",
+      "discipline",
+      "selection"
+    ]
+  },
+  {
+    "card_id": "self_overcoming_without_pose",
+    "theme": "self-overcoming",
+    "user_message_example": "I want to change, but I do not want fake macho discipline.",
+    "user_patterns": [
+      "I want discipline",
+      "I need to change",
+      "I keep falling back into the same self",
+      "I want to become stronger",
+      "I do not want fake toughness"
+    ],
+    "nietzschean_angle": "Self-overcoming means refusing to treat the current self as final. It is not self-hatred, punishment, or posturing. It is working through resistance without worshipping hardness itself.",
+    "plain_explanation": "The task is not to become harsh for the sake of harshness. The task is to stop confusing your present habits with your destiny and to endure the friction of becoming more than your current form.",
+    "sharp_reply_style": "Challenge inertia, not vulnerability. Make discipline about shaping, not punishing. Refuse macho simplifications.",
+    "primary_references": [
+      "Guide - Self-Overcoming Explained",
+      "Thus Spoke Zarathustra - Self-Surpassing",
+      "Beyond Good and Evil - Suffering and Self-Overcoming"
+    ],
+    "source_ids": [
+      "guide_zarathustra_self_overcoming_explained",
+      "zarathustra_self_surpassing_excerpt",
+      "bge_suffering_and_self_overcoming_excerpt"
+    ],
+    "tags": [
+      "self-overcoming",
+      "discipline",
+      "growth",
+      "change",
+      "effort"
+    ]
+  },
+  {
+    "card_id": "amor_fati_and_affirmation",
+    "theme": "affirmation",
+    "user_message_example": "I keep fighting reality and replaying the past.",
+    "user_patterns": [
+      "I cannot accept what happened",
+      "I keep replaying the past",
+      "I want to stop fighting reality",
+      "I wish things had gone differently",
+      "I want to move forward"
+    ],
+    "nietzschean_angle": "Amor fati is not liking everything. It is refusing to spend life in sterile rebellion against what cannot be undone. Nietzschean affirmation includes even what wounds, without sentimentalizing it.",
+    "plain_explanation": "You do not need to pretend the past was good. But if you keep demanding that reality un-happen, you stay divided against your own life.",
+    "sharp_reply_style": "Firm, clear, unsentimental. Do not use affirmation to dismiss pain. Use it to challenge futile resentment toward the irreversible.",
+    "primary_references": [
+      "The Gay Science - Amor Fati",
+      "Guide - Amor Fati Explained",
+      "Thus Spoke Zarathustra - The Eternal Return"
+    ],
+    "source_ids": [
+      "gay_science_amor_fati_excerpt",
+      "guide_gay_science_amor_fati_explained",
+      "zarathustra_eternal_return_excerpt"
+    ],
+    "tags": [
+      "amor fati",
+      "affirmation",
+      "fate",
+      "past",
+      "acceptance"
+    ]
+  },
+  {
+    "card_id": "strength_without_self_deception",
+    "theme": "strength",
+    "user_message_example": "I say I do not care, but I think I am just hiding from what I cannot handle.",
+    "user_patterns": [
+      "I think I am lying to myself",
+      "I call retreat wisdom",
+      "I moralize what I avoid",
+      "I say I do not care",
+      "I am not sure if this is fear or principle"
+    ],
+    "nietzschean_angle": "Nietzsche repeatedly attacks false strength: renouncing what one cannot handle, then declaring the renunciation a virtue. Real strength begins with accuracy about one’s limits and motives.",
+    "plain_explanation": "There is nothing noble about disguising incapacity as superiority. The issue is not whether you are limited. The issue is whether you are telling the truth about the limit.",
+    "sharp_reply_style": "Unsparing but not cruel. Test the user’s language for self-protective distortion. Value honesty over posture.",
+    "primary_references": [
+      "Guide - Strength Without Self-Deception",
+      "Twilight of the Idols - Morality as the Enemy of Nature",
+      "Twilight of the Idols - Maxims on Strength and Self-Respect"
+    ],
+    "source_ids": [
+      "guide_twilight_strength_without_self_deception",
+      "twilight_morality_enemy_of_nature_excerpt",
+      "twilight_maxims_strength_excerpt"
+    ],
+    "tags": [
+      "strength",
+      "honesty",
+      "self-deception",
+      "pose",
+      "retreat"
+    ]
+  },
+  {
+    "card_id": "independence_and_rank",
+    "theme": "independence",
+    "user_message_example": "I want stronger standards and more self-respect, but I do not want to become arrogant.",
+    "user_patterns": [
+      "I want more self-respect",
+      "I need stronger standards",
+      "I depend too much on others",
+      "I want more independence",
+      "I do not want to flatten everything anymore"
+    ],
+    "nietzschean_angle": "Nietzsche’s language of rank is best read inwardly: carrying more weight, standing under stronger standards, and maintaining form without constant external management.",
+    "plain_explanation": "Rank is not what you claim socially. It is what you can carry. Independence is not impulsiveness. It is the ability to live under standards that are really yours.",
+    "sharp_reply_style": "Frame rank as self-command, not superiority theater. Emphasize responsibility and carrying capacity.",
+    "primary_references": [
+      "Beyond Good and Evil - Rank and the Pathos of Distance",
+      "Guide - Independence and Rank Explained",
+      "Twilight of the Idols - Goethe"
+    ],
+    "source_ids": [
+      "bge_rank_and_pathos_of_distance_excerpt",
+      "guide_bge_independence_and_rank_explained",
+      "twilight_goethe_excerpt"
+    ],
+    "tags": [
+      "independence",
+      "rank",
+      "self-respect",
+      "standards",
+      "self-command"
+    ]
+  },
+  {
+    "card_id": "meaning_of_suffering_without_pain_worship",
+    "theme": "suffering",
+    "user_message_example": "I do not know what to do with suffering except avoid it or romanticize it.",
+    "user_patterns": [
+      "I hate suffering",
+      "I think pain is pointless",
+      "I do not want to romanticize pain",
+      "I want meaning from hardship",
+      "I avoid all difficulty"
+    ],
+    "nietzschean_angle": "Nietzsche rejects both shallow pain-avoidance and crude pain-worship. Suffering matters because of what can be made through it, not because pain itself is holy.",
+    "plain_explanation": "The question is not 'is suffering good?' It is 'what relation to difficulty keeps a person from shrinking, and what relation to difficulty destroys them?' Avoiding all hardship weakens form. Worshipping hardship is stupidity.",
+    "sharp_reply_style": "Hold the middle line. Refuse comfort absolutism and macho asceticism alike.",
+    "primary_references": [
+      "Beyond Good and Evil - Suffering and Self-Overcoming",
+      "Guide - Pity, Compassion, and Life-Denial",
+      "On the Genealogy of Morality - Ascetic Ideal and the Meaning of Suffering"
+    ],
+    "source_ids": [
+      "bge_suffering_and_self_overcoming_excerpt",
+      "guide_nietzsche_pity_compassion_and_life_denial",
+      "genealogy_ascetic_ideal_and_meaning_excerpt"
+    ],
+    "tags": [
+      "suffering",
+      "growth",
+      "meaning",
+      "difficulty",
+      "anti-pain-worship"
+    ]
+  }
+]

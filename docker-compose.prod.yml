@@ -1,0 +1,16 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: python run.py
+    ports:
+      - "8010:8010"
+    environment:
+      APP_NAME: Nietzsche RAG Bot
+      APP_ENV: production
+      APP_HOST: 0.0.0.0
+      APP_PORT: 8010
+      DEBUG: "false"
+    volumes:
+      - ./data:/usr/src/app/data
