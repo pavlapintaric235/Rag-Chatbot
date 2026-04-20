@@ -11,31 +11,67 @@
     <div class="background-tint"></div>
     <div class="background-glow"></div>
 
-    <main class="app">
-      <section class="hero-card">
-        <p class="eyebrow">A sharper conversation</p>
+    <main class="app-shell">
+      <section class="chat-card">
+        <header class="hero-header">
+          <p class="eyebrow">A sharper conversation</p>
+          <h1>Nietzsche RAG Bot</h1>
+          <p class="description">
+            Ask plainly. The reply should not soothe weakness, decorate excuses,
+            or flatter drift.
+          </p>
+        </header>
 
-        <h1>Nietzsche RAG Bot</h1>
+        <section id="chat-feed" class="chat-feed" aria-live="polite">
+          <article class="message assistant">
+            <div class="message-role">Nietzsche RAG Bot</div>
+            <div class="message-bubble">
+              <p>
+                Say what you are struggling with. I will answer from the corpus,
+                with grounded citations and the relevant interpretation cards when they match.
+              </p>
+            </div>
+          </article>
+        </section>
 
-        <p class="description">
-          Not a machine for comfort. Not a mirror for excuses. A dark, quiet place
-          to confront the habits of weakness, the safety of the herd, and the harder
-          task of becoming who you are.
-        </p>
+        <form id="chat-form" class="chat-form">
+          <label class="sr-only" for="message-input">Your message</label>
+          <textarea
+            id="message-input"
+            name="message"
+            rows="3"
+            maxlength="2000"
+            placeholder="Example: I keep choosing comfort over difficulty and then I rationalize it."
+            required
+          ></textarea>
 
-        <div class="status-panel">
-          <div class="status-row">
-            <span class="label">Backend URL</span>
-            <span class="value" id="backend-url"></span>
+          <div class="form-row">
+            <p id="form-status" class="form-status"></p>
+            <button id="send-button" type="submit">Send</button>
           </div>
-
-          <div class="status-row">
-            <span class="label">Health check</span>
-            <span class="value" id="health-status">Checking backend...</span>
-          </div>
-        </div>
+        </form>
       </section>
     </main>
+
+    <template id="user-message-template">
+      <article class="message user">
+        <div class="message-role">You</div>
+        <div class="message-bubble">
+          <p class="user-message-text"></p>
+        </div>
+      </article>
+    </template>
+
+    <template id="assistant-message-template">
+      <article class="message assistant">
+        <div class="message-role">Nietzsche RAG Bot</div>
+        <div class="message-bubble">
+          <div class="assistant-answer"></div>
+          <div class="assistant-cards"></div>
+          <div class="assistant-citations"></div>
+        </div>
+      </article>
+    </template>
 
     <script src="/static/app.js"></script>
   </body>
