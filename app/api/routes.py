@@ -14,14 +14,6 @@ from app.services.source_service import get_source_status
 router = APIRouter()
 
 
-@router.get("/")
-def root() -> dict[str, str]:
-    return {
-        "message": f"{settings.app_name} is running.",
-        "environment": settings.app_env,
-    }
-
-
 @router.get("/health")
 def health_check() -> dict[str, str]:
     return {"status": "ok"}
