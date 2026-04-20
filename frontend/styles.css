@@ -1,0 +1,198 @@
+:root {
+  --bg: #05070b;
+  --card-bg: rgba(7, 12, 19, 0.38);
+  --panel-bg: rgba(5, 10, 16, 0.30);
+  --border: rgba(122, 162, 255, 0.24);
+  --line: rgba(255, 255, 255, 0.10);
+  --text: #f3f5f7;
+  --muted: #cdd4dd;
+  --soft: #a2abbb;
+  --blue: #7aa2ff;
+  --shadow: 0 24px 80px rgba(0, 0, 0, 0.24);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background: var(--bg);
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--text);
+}
+
+.page-background {
+  position: fixed;
+  inset: 0;
+  background-color: #05070b;
+  background-image: url("/static/assets/nietzsche-bg.jpg");
+  background-size: 80%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 0;
+  transform: scale(0.96);
+  transform-origin: center center;
+}
+
+.background-tint {
+  position: fixed;
+  inset: 0;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(3, 6, 10, 0.10),
+      rgba(3, 6, 10, 0.16),
+      rgba(3, 6, 10, 0.22)
+    );
+  z-index: 1;
+  pointer-events: none;
+}
+
+.background-glow {
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at top left, rgba(122, 162, 255, 0.10), transparent 32%),
+    radial-gradient(circle at bottom right, rgba(122, 162, 255, 0.05), transparent 24%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.app {
+  position: relative;
+  z-index: 3;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.hero-card {
+  width: 100%;
+  max-width: 1120px;
+  padding: 42px 38px;
+  border-radius: 28px;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+
+.eyebrow {
+  margin: 0 0 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--blue);
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  line-height: 0.96;
+  letter-spacing: -0.04em;
+  color: var(--text);
+}
+
+.description {
+  max-width: 860px;
+  margin: 22px 0 0;
+  font-size: 1.18rem;
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+.status-panel {
+  margin-top: 34px;
+  padding: 18px 20px;
+  border-radius: 20px;
+  background: var(--panel-bg);
+  border: 1px solid var(--line);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+}
+
+.status-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 0;
+}
+
+.status-row + .status-row {
+  border-top: 1px solid var(--line);
+}
+
+.label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--soft);
+}
+
+.value {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.98rem;
+  line-height: 1.6;
+  color: var(--text);
+  word-break: break-word;
+}
+
+@media (max-width: 900px) {
+  .hero-card {
+    max-width: 920px;
+    padding: 34px 28px;
+  }
+
+  h1 {
+    font-size: clamp(2.7rem, 8vw, 4.5rem);
+  }
+
+  .description {
+    font-size: 1.06rem;
+    line-height: 1.75;
+  }
+
+  .page-background {
+    background-position: 68% 18%;
+  }
+}
+
+@media (max-width: 640px) {
+  .app {
+    padding: 18px 12px;
+  }
+
+  .hero-card {
+    padding: 24px 18px;
+    border-radius: 18px;
+  }
+
+  .description {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .status-panel {
+    padding: 14px 16px;
+  }
+
+  .page-background {
+    background-position: 62% 14%;
+    transform: scale(1);
+  }
+}
