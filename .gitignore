@@ -1,14 +1,5 @@
 .venv/
 __pycache__/
+.pytest_cache/
 *.pyc
-*.pyo
-*.pyd
 .env
-.vscode/
-.idea/
-
-data/extracted/
-data/cleaned/
-data/chunks/
-data/cards/
-data/vector_store/
