@@ -58,54 +58,52 @@ Example grounded answer with citations
 <img width="2360" height="1110" alt="IMG_2614" src="https://github.com/user-attachments/assets/3e9360d9-672e-4d7b-8612-355dbb33cfe7" />
 
 
-## Technologies used
-Backend:
+## Technologies Used
 
--Python
--FastAPI
--Starlette response/static file serving
--Uvicorn
--Pydantic
--python-dotenv
--Retrieval / data pipeline
--Curated Nietzsche corpus
--Extracted documents
--Cleaned documents
--Text chunks
--Interpretation cards
--TF-IDF retrieval artifacts
+### Backend
+- Python
+- FastAPI
+- Starlette responses / static file serving
+- Uvicorn
+- Pydantic
+- python-dotenv
+- Retrieval / data pipeline
+- Curated Nietzsche corpus
+- Extracted documents
+- Cleaned documents
+- Text chunks
+- Interpretation cards
+- TF-IDF retrieval artifacts
 
-Frontend:
+### Frontend
+- Vanilla HTML
+- Vanilla CSS
+- Vanilla JavaScript
 
--Vanilla HTML
--Vanilla CSS
--Vanilla JavaScript
+### Deployment / DevOps
+- Docker
+- Render
+- docker-compose
+- API routes
 
-Deployment / DevOps:
+## Important Routes
 
--Docker
--Render
--docker-compose
--API routes
-
-## Important routes
-
-GET / → serves the frontend
-GET /health → health check
-GET /ready → readiness check
-POST /chat → grounded response generation
-POST /retrieve → retrieval endpoint
-POST /debug/inspect → debug inspection endpoint
-GET /sources
-GET /extracted
-GET /extracted/{source_id}
-GET /cleaned
-GET /cleaned/{source_id}
-GET /chunks
-GET /chunks/{source_id}
-GET /cards
-GET /cards/{card_id}
-
+- `GET /` → serves the frontend
+- `GET /health` → health check
+- `GET /ready` → readiness check
+- `POST /chat` → grounded response generation
+- `POST /retrieve` → retrieval endpoint
+- `POST /debug/inspect` → debug inspection endpoint
+- `GET /sources`
+- `GET /extracted`
+- `GET /extracted/{source_id}`
+- `GET /cleaned`
+- `GET /cleaned/{source_id}`
+- `GET /chunks`
+- `GET /chunks/{source_id}`
+- `GET /cards`
+- `GET /cards/{card_id}`
+- 
 ## How it works
 
 1. Source ingestion
