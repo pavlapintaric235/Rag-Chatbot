@@ -4,57 +4,85 @@ from app.models.chat import ChatCitation, ChatResponse
 from app.services.card_lookup_service import find_relevant_cards
 from app.services.retrieval_service import search_retrieval_corpus
 
+_ALLOWED_TOPIC_TERMS: tuple[str, ...] = (
+    "comfort",
+    "complacency",
+    "easy life",
+    "safety",
+    "security",
+    "comfort zone",
+    "weakness",
+    "excuse",
+    "excuses",
+    "rationalize",
+    "rationalise",
+    "self-deception",
+    "self deception",
+    "avoidance",
+    "avoid",
+    "fear of struggle",
+    "struggle",
+    "discipline",
+    "self-overcoming",
+    "self overcoming",
+    "becoming who you are",
+    "become who i am",
+    "become who you are",
+    "herd",
+    "herd mentality",
+    "conformity",
+    "conformism",
+    "resentment",
+    "ressentiment",
+    "last man",
+    "greatness",
+    "mediocrity",
+    "drift",
+    "comfort-seeking",
+    "comfort seeking",
+)
 
-def _clip_text(text: str, max_length: int = 280) -> str:
+
+def _normalize(text: str) -> str:
+    return " ".join(text.lower().split()).strip()
+
+
+def _clip_text(text: str, max_length: int = 220) -> str:
     normalized = " ".join(text.split()).strip()
     if len(normalized) <= max_length:
         return normalized
     return normalized[: max_length - 3].rstrip() + "..."
 
 
-def _build_card_driven_opening(matched_cards: list[dict], user_message: str) -> str:
-    if not matched_cards:
-        return (
-            "Your message points to a real psychological pattern, not just a passing mood. "
-            "So the first job is to name the pattern honestly and refuse the flattering lie inside it."
-        )
-
-    top_card = matched_cards[0]
-
-    theme = str(top_card.get("theme", "")).strip()
-    angle = str(top_card.get("nietzschean_angle", "")).strip()
-    explanation = str(top_card.get("plain_explanation", "")).strip()
-
-    parts: list[str] = []
-
-    if theme:
-        parts.append(f"Primary pattern detected: {theme}.")
-
-    if angle:
-        parts.append(angle)
-
-    if explanation:
-        parts.append(explanation)
-
-    return "\n\n".join(parts)
+def _is_explicitly_in_scope(message: str) -> bool:
+    normalized = _normalize(message)
+    return any(term in normalized for term in _ALLOWED_TOPIC_TERMS)
 
 
-def _build_action_turn(matched_cards: list[dict]) -> str:
-    if not matched_cards:
-        return (
-            "The move now is to stop turning the pattern into identity. "
-            "Interrupt it in action, not just in analysis."
-        )
+def _retrieval_looks_in_scope(retrieved_chunks: list[dict]) -> bool:
+    if not retrieved_chunks:
+        return False
 
-    top_card = matched_cards[0]
-    sharp_reply_style = str(top_card.get("sharp_reply_style", "")).strip()
+    for chunk in retrieved_chunks:
+        themes = [str(item).strip().lower() for item in chunk.get("themes", []) if str(item).strip()]
+        tags = [str(item).strip().lower() for item in chunk.get("tags", []) if str(item).strip()]
+        haystack = " | ".join(themes + tags)
 
-    if sharp_reply_style:
-        return sharp_reply_style
+        if not haystack:
+            continue
 
+        if any(term in haystack for term in _ALLOWED_TOPIC_TERMS):
+            return True
+
+    return False
+
+
+def _build_scope_refusal(message: str) -> str:
     return (
-        "The move now is to stop turning the pattern into identity. "
-        "Interrupt it in action, not just in analysis."
+        "That is outside this bot's scope. It only answers within the Nietzsche themes "
+        "already defined in the corpus: comfort and complacency, excuse-making, herd mentality, "
+        "conformity, ressentiment, fear of struggle, self-overcoming, and becoming who you are. "
+        "Ask within those themes and I will answer from the corpus."
     )
 
 
@@ -103,100 +131,72 @@ def _select_diverse_citation_chunks(
     return selected[:max_citations]
 
 
-def _pick_secondary_support_chunk(retrieved_chunks: list[dict]) -> dict | None:
-    if not retrieved_chunks:
-        return None
-
-    primary_source_id = str(retrieved_chunks[0].get("source_id") or "").strip()
-
-    for chunk in retrieved_chunks[1:]:
-        source_id = str(chunk.get("source_id") or "").strip()
-        if source_id and source_id != primary_source_id:
-            return chunk
-
-    if len(retrieved_chunks) >= 2:
-        return retrieved_chunks[1]
-
-    return None
-
-
-def _build_source_bridge(retrieved_chunks: list[dict]) -> str:
-    if not retrieved_chunks:
-        return (
-            "I do not have grounded Nietzsche material for that yet. "
-            "Your current corpus did not return a relevant passage, so I will not fake one."
-        )
-
-    primary_chunk = retrieved_chunks[0]
-    primary_text = str(
-        primary_chunk.get("display_text")
-        or primary_chunk.get("text", "")
-    ).strip()
-    primary_work = str(primary_chunk.get("work") or "Nietzsche source").strip()
-    primary_section = str(primary_chunk.get("section") or "").strip()
-
-    parts: list[str] = []
-
-    if primary_section:
-        parts.append(
-            f"The strongest supporting passage I found is from {primary_work}, section {primary_section}."
-        )
-    else:
-        parts.append(
-            f"The strongest supporting passage I found is from {primary_work}."
-        )
-
-    parts.append(
-        f"Grounded passage: {_clip_text(primary_text, max_length=320)}"
-    )
-
-    secondary_chunk = _pick_secondary_support_chunk(retrieved_chunks)
-    if secondary_chunk is not None:
-        secondary_text = str(
-            secondary_chunk.get("display_text")
-            or secondary_chunk.get("text", "")
-        ).strip()
-        secondary_work = str(secondary_chunk.get("work") or "Nietzsche source").strip()
-        secondary_section = str(secondary_chunk.get("section") or "").strip()
-
-        if secondary_text:
-            if secondary_section:
-                parts.append(
-                    f"A second supporting passage comes from {secondary_work}, section {secondary_section}: "
-                    f"{_clip_text(secondary_text, max_length=220)}"
-                )
-            else:
-                parts.append(
-                    f"A second supporting passage comes from {secondary_work}: "
-                    f"{_clip_text(secondary_text, max_length=220)}"
-                )
-
-    return "\n\n".join(parts)
-
-
 def _build_answer(
-    user_message: str,
     retrieved_chunks: list[dict],
     matched_cards: list[dict],
 ) -> str:
-    if not retrieved_chunks:
-        return (
-            "I do not have grounded Nietzsche material for that yet. "
-            "Your current corpus did not return a relevant passage, so I will not fake one."
-        )
+    if matched_cards:
+        top_card = matched_cards[0]
 
-    opening = _build_card_driven_opening(
-        matched_cards=matched_cards,
-        user_message=user_message,
+        angle = str(top_card.get("nietzschean_angle", "")).strip()
+        explanation = str(top_card.get("plain_explanation", "")).strip()
+        action_turn = str(top_card.get("sharp_reply_style", "")).strip()
+
+        parts: list[str] = []
+
+        first_paragraph = angle or explanation
+        if first_paragraph:
+            parts.append(first_paragraph)
+
+        if explanation and explanation != first_paragraph:
+            parts.append(explanation)
+
+        if action_turn:
+            parts.append(action_turn)
+
+        cleaned_parts = [part for part in parts if part]
+        if cleaned_parts:
+            return "\n\n".join(cleaned_parts[:3])
+
+    if retrieved_chunks:
+        top_chunk = retrieved_chunks[0]
+        top_text = str(
+            top_chunk.get("display_text")
+            or top_chunk.get("text", "")
+        ).strip()
+
+        if top_text:
+            return (
+                "The corpus does point to a relevant pattern here. "
+                f"{_clip_text(top_text, max_length=320)}"
+            )
+
+    return (
+        "I do not have grounded Nietzsche material for that yet, "
+        "so I will not fake an answer."
     )
-    source_bridge = _build_source_bridge(retrieved_chunks=retrieved_chunks)
-    action_turn = _build_action_turn(matched_cards=matched_cards)
-
-    return "\n\n".join([opening, source_bridge, action_turn])
 
 
 def generate_grounded_reply(message: str) -> ChatResponse:
+    normalized_message = _normalize(message)
+
+    if not _is_explicitly_in_scope(normalized_message):
+        return ChatResponse(
+            message=message,
+            answer=_build_scope_refusal(message),
+            matched_card_ids=[],
+            citations=[],
+        )
+
     retrieved_chunks = search_retrieval_corpus(query=message, top_k=5)
+
+    if not _retrieval_looks_in_scope(retrieved_chunks):
+        return ChatResponse(
+            message=message,
+            answer=_build_scope_refusal(message),
+            matched_card_ids=[],
+            citations=[],
+        )
 
     retrieved_source_ids = {
         str(item.get("source_id")).strip()
@@ -243,7 +243,6 @@ def generate_grounded_reply(message: str) -> ChatResponse:
     ]
 
     answer = _build_answer(
-        user_message=message,
         retrieved_chunks=retrieved_chunks,
         matched_cards=matched_cards,
     )
