@@ -55,11 +55,6 @@ _ALLOWED_TOPIC_TERMS: tuple[str, ...] = (
     "belong",
     "approval",
     "people pleasing",
-    "purpose",
-    "meaning",
-    "human purpose",
-    "what am i for",
-    "what is life for",
 )
 
 _SCOPE_PATTERNS: tuple[tuple[str, str], ...] = (
@@ -68,15 +63,27 @@ _SCOPE_PATTERNS: tuple[tuple[str, str], ...] = (
     (r"\bproductive\b|\bproductivity\b|\bdo nothing\b|\bdoing nothing\b", "discipline"),
     (r"\bi don't feel like doing anything\b|\bdon't feel like doing anything\b", "comfort"),
     (r"\bcan't get myself to work\b|\bcan't make myself work\b", "fear of struggle"),
+    (r"\bcan't focus\b|\bcan't stick with anything\b|\bno discipline\b", "discipline"),
     (r"\btired of being weak\b|\bweak\b|\bweakness\b", "weakness"),
     (r"\bexcuse\b|\bjustif\w*\b|\brationaliz\w*\b", "excuses"),
     (r"\bfit in\b|\bfitting in\b|\bbelong\b|\bapproval\b|\baccepted\b|\bpeople pleasing\b", "herd mentality"),
-    (r"\bwhat is human made for\b|\bwhat are humans made for\b|\bwhat is human purpose\b|\bhuman purpose\b", "becoming who you are"),
-    (r"\bwhat am i for\b|\bwhat is life for\b|\bmeaning of my life\b|\bpurpose of my life\b", "becoming who you are"),
+    (r"\bwhat should i become\b|\bhow do i become myself\b|\bfind my direction\b|\bfind my own direction\b|\bliving borrowed values\b", "becoming who you are"),
     (r"\bcomfort\b|\bsafety\b|\beasy life\b", "comfort"),
     (r"\bconform\w*\b|\bherd\b", "herd mentality"),
     (r"\bressentiment\b|\bresentment\b", "ressentiment"),
     (r"\bstruggle\b|\bdifficulty\b|\bhardship\b", "fear of struggle"),
+)
+
+_BROAD_REFUSAL_PATTERNS: tuple[str, ...] = (
+    r"\bwhat is human purpose\b",
+    r"\bhuman purpose\b",
+    r"\bwhat is the purpose of humanity\b",
+    r"\bwhat are humans made for\b",
+    r"\bwhat is man\b",
+    r"\bwhat are humans for\b",
+    r"\bdoes god exist\b",
+    r"\bwhat is morality\b",
+    r"\bwhat is truth\b",
 )
 
 _STOPWORDS: set[str] = {
@@ -237,7 +244,7 @@ def _clean_chunk_text(text: str) -> str:
     for pattern in _METADATA_CUTOFF_PATTERNS:
         cleaned = re.sub(pattern, "", cleaned, flags=re.IGNORECASE | re.DOTALL)
 
-    lines = []
+    lines: list[str] = []
     for line in cleaned.splitlines():
         stripped = line.strip()
         if not stripped:
@@ -257,7 +264,10 @@ def _clean_chunk_text(text: str) -> str:
     usable_sentences: list[str] = []
 
     for sentence in sentences:
-        upper_ratio = sum(1 for ch in sentence if ch.isupper()) / max(1, sum(1 for ch in sentence if ch.isalpha()))
+        upper_ratio = sum(1 for ch in sentence if ch.isupper()) / max(
+            1,
+            sum(1 for ch in sentence if ch.isalpha()),
+        )
         if upper_ratio > 0.55 and len(sentence) > 30:
             continue
         if "useful user messages" in sentence.lower():
@@ -292,8 +302,15 @@ def _canonical_topics_from_message(message: str) -> list[str]:
     return deduped
 
 
+def _is_broad_abstract_question(message: str) -> bool:
+    normalized = _normalize(message)
+    return any(re.search(pattern, normalized, flags=re.IGNORECASE) for pattern in _BROAD_REFUSAL_PATTERNS)
+
+
 def _is_explicitly_in_scope(message: str) -> bool:
     normalized = _normalize(message)
+    if _is_broad_abstract_question(normalized):
+        return False
     if any(term in normalized for term in _ALLOWED_TOPIC_TERMS):
         return True
     return bool(_canonical_topics_from_message(normalized))
@@ -317,7 +334,8 @@ def _retrieval_looks_in_scope(retrieved_chunks: list[dict]) -> bool:
 def _build_scope_refusal() -> str:
     return (
         "That is outside this bot's scope.\n\n"
-        "It answers within a narrow Nietzsche corpus focused on real-life struggles around comfort, complacency, laziness, excuse-making, conformity, ressentiment, fear of struggle, self-overcoming, and becoming who you are."
+        "It answers within a narrow Nietzsche corpus focused on real-life struggles around comfort, laziness, "
+        "excuse-making, conformity, ressentiment, fear of struggle, self-overcoming, and becoming who you are."
     )
 
 
