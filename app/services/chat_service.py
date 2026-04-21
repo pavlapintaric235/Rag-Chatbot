@@ -77,12 +77,11 @@ def _retrieval_looks_in_scope(retrieved_chunks: list[dict]) -> bool:
     return False
 
 
-def _build_scope_refusal(message: str) -> str:
+def _build_scope_refusal() -> str:
     return (
-        "That is outside this bot's scope. It only answers within the Nietzsche themes "
+        "That is outside this bot's scope. It only answers within the declared Nietzsche themes "
         "already defined in the corpus: comfort and complacency, excuse-making, herd mentality, "
-        "conformity, ressentiment, fear of struggle, self-overcoming, and becoming who you are. "
-        "Ask within those themes and I will answer from the corpus."
+        "conformity, ressentiment, fear of struggle, self-overcoming, and becoming who you are."
     )
 
 
@@ -131,50 +130,68 @@ def _select_diverse_citation_chunks(
     return selected[:max_citations]
 
 
+def _build_passage_paragraph(chunk: dict, intro: str | None = None, max_length: int = 420) -> str:
+    work = str(chunk.get("work") or "Nietzsche source").strip()
+    section = str(chunk.get("section") or "").strip()
+    text = str(chunk.get("display_text") or chunk.get("text") or "").strip()
+
+    if not text:
+        return ""
+
+    source_line = f"{work}, {section}" if section else work
+    clipped = _clip_text(text, max_length=max_length)
+
+    if intro:
+        return f"{intro} In {source_line}, the corpus points to this: {clipped}"
+
+    return f"In {source_line}, the corpus points to this: {clipped}"
+
+
 def _build_answer(
+    user_message: str,
     retrieved_chunks: list[dict],
     matched_cards: list[dict],
 ) -> str:
-    if matched_cards:
-        top_card = matched_cards[0]
+    if not retrieved_chunks:
+        return (
+            "I do not have grounded Nietzsche material for that yet, "
+            "so I will not fake an answer."
+        )
 
-        angle = str(top_card.get("nietzschean_angle", "")).strip()
-        explanation = str(top_card.get("plain_explanation", "")).strip()
-        action_turn = str(top_card.get("sharp_reply_style", "")).strip()
+    primary_chunk = retrieved_chunks[0]
+    secondary_chunk = retrieved_chunks[1] if len(retrieved_chunks) > 1 else None
 
-        parts: list[str] = []
+    top_card = matched_cards[0] if matched_cards else {}
+    angle = str(top_card.get("nietzschean_angle", "")).strip()
+    explanation = str(top_card.get("plain_explanation", "")).strip()
 
-        first_paragraph = angle or explanation
-        if first_paragraph:
-            parts.append(first_paragraph)
+    parts: list[str] = []
 
-        if explanation and explanation != first_paragraph:
-            parts.append(explanation)
+    opening = angle or explanation
+    if opening:
+        parts.append(opening)
 
-        if action_turn:
-            parts.append(action_turn)
-
-        cleaned_parts = [part for part in parts if part]
-        if cleaned_parts:
-            return "\n\n".join(cleaned_parts[:3])
-
-    if retrieved_chunks:
-        top_chunk = retrieved_chunks[0]
-        top_text = str(
-            top_chunk.get("display_text")
-            or top_chunk.get("text", "")
-        ).strip()
-
-        if top_text:
-            return (
-                "The corpus does point to a relevant pattern here. "
-                f"{_clip_text(top_text, max_length=320)}"
-            )
-
-    return (
-        "I do not have grounded Nietzsche material for that yet, "
-        "so I will not fake an answer."
+    primary_paragraph = _build_passage_paragraph(
+        primary_chunk,
+        intro="The strongest grounded support for that reading comes from the top retrieved passage.",
+        max_length=420,
     )
+    if primary_paragraph:
+        parts.append(primary_paragraph)
+
+    if secondary_chunk is not None:
+        secondary_paragraph = _build_passage_paragraph(
+            secondary_chunk,
+            intro="A second passage strengthens the same line of interpretation.",
+            max_length=280,
+        )
+        if secondary_paragraph:
+            parts.append(secondary_paragraph)
+
+    if explanation and explanation != opening:
+        parts.append(explanation)
+
+    return "\n\n".join(part for part in parts if part)
 
 
 def generate_grounded_reply(message: str) -> ChatResponse:
@@ -183,7 +200,7 @@ def generate_grounded_reply(message: str) -> ChatResponse:
     if not _is_explicitly_in_scope(normalized_message):
         return ChatResponse(
             message=message,
-            answer=_build_scope_refusal(message),
+            answer=_build_scope_refusal(),
             matched_card_ids=[],
             citations=[],
         )
@@ -193,7 +210,7 @@ def generate_grounded_reply(message: str) -> ChatResponse:
     if not _retrieval_looks_in_scope(retrieved_chunks):
         return ChatResponse(
             message=message,
-            answer=_build_scope_refusal(message),
+            answer=_build_scope_refusal(),
             matched_card_ids=[],
             citations=[],
         )
@@ -218,10 +235,7 @@ def generate_grounded_reply(message: str) -> ChatResponse:
     )
 
     for item in citation_chunks:
-        text = str(
-            item.get("display_text")
-            or item.get("text", "")
-        ).strip()
+        text = str(item.get("display_text") or item.get("text", "")).strip()
         if not text:
             continue
 
@@ -243,6 +257,7 @@ def generate_grounded_reply(message: str) -> ChatResponse:
     ]
 
     answer = _build_answer(
+        user_message=message,
         retrieved_chunks=retrieved_chunks,
         matched_cards=matched_cards,
     )
