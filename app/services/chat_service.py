@@ -43,6 +43,40 @@ _ALLOWED_TOPIC_TERMS: tuple[str, ...] = (
     "drift",
     "comfort-seeking",
     "comfort seeking",
+    "laziness",
+    "lazy",
+    "procrastination",
+    "procrastinate",
+    "motivation",
+    "productive",
+    "productivity",
+    "fit in",
+    "fitting in",
+    "belong",
+    "approval",
+    "people pleasing",
+    "purpose",
+    "meaning",
+    "human purpose",
+    "what am i for",
+    "what is life for",
+)
+
+_SCOPE_PATTERNS: tuple[tuple[str, str], ...] = (
+    (r"\blazy\b|\blaziness\b|\bsloth\b", "comfort"),
+    (r"\bprocrastinat\w*\b|\bputting things off\b|\bput off\b", "avoidance"),
+    (r"\bproductive\b|\bproductivity\b|\bdo nothing\b|\bdoing nothing\b", "discipline"),
+    (r"\bi don't feel like doing anything\b|\bdon't feel like doing anything\b", "comfort"),
+    (r"\bcan't get myself to work\b|\bcan't make myself work\b", "fear of struggle"),
+    (r"\btired of being weak\b|\bweak\b|\bweakness\b", "weakness"),
+    (r"\bexcuse\b|\bjustif\w*\b|\brationaliz\w*\b", "excuses"),
+    (r"\bfit in\b|\bfitting in\b|\bbelong\b|\bapproval\b|\baccepted\b|\bpeople pleasing\b", "herd mentality"),
+    (r"\bwhat is human made for\b|\bwhat are humans made for\b|\bwhat is human purpose\b|\bhuman purpose\b", "becoming who you are"),
+    (r"\bwhat am i for\b|\bwhat is life for\b|\bmeaning of my life\b|\bpurpose of my life\b", "becoming who you are"),
+    (r"\bcomfort\b|\bsafety\b|\beasy life\b", "comfort"),
+    (r"\bconform\w*\b|\bherd\b", "herd mentality"),
+    (r"\bressentiment\b|\bresentment\b", "ressentiment"),
+    (r"\bstruggle\b|\bdifficulty\b|\bhardship\b", "fear of struggle"),
 )
 
 _STOPWORDS: set[str] = {
@@ -240,9 +274,29 @@ def _clip_text(text: str, max_length: int = 220) -> str:
     return _trim_to_sentence_limit(_clean_chunk_text(text), max_length=max_length)
 
 
+def _canonical_topics_from_message(message: str) -> list[str]:
+    normalized = _normalize(message)
+    topics: list[str] = []
+
+    for pattern, topic in _SCOPE_PATTERNS:
+        if re.search(pattern, normalized, flags=re.IGNORECASE):
+            topics.append(topic)
+
+    seen: set[str] = set()
+    deduped: list[str] = []
+    for topic in topics:
+        if topic not in seen:
+            seen.add(topic)
+            deduped.append(topic)
+
+    return deduped
+
+
 def _is_explicitly_in_scope(message: str) -> bool:
     normalized = _normalize(message)
-    return any(term in normalized for term in _ALLOWED_TOPIC_TERMS)
+    if any(term in normalized for term in _ALLOWED_TOPIC_TERMS):
+        return True
+    return bool(_canonical_topics_from_message(normalized))
 
 
 def _retrieval_looks_in_scope(retrieved_chunks: list[dict]) -> bool:
@@ -263,9 +317,7 @@ def _retrieval_looks_in_scope(retrieved_chunks: list[dict]) -> bool:
 def _build_scope_refusal() -> str:
     return (
         "That is outside this bot's scope.\n\n"
-        "It only answers within the declared Nietzsche themes already defined in the corpus: "
-        "comfort and complacency, excuse-making, herd mentality, conformity, ressentiment, "
-        "fear of struggle, self-overcoming, and becoming who you are."
+        "It answers within a narrow Nietzsche corpus focused on real-life struggles around comfort, complacency, laziness, excuse-making, conformity, ressentiment, fear of struggle, self-overcoming, and becoming who you are."
     )
 
 
@@ -448,15 +500,7 @@ def _build_answer(
     retrieved_chunks: list[dict],
     matched_cards: list[dict],
 ) -> str:
-    ranked_chunks = _rerank_chunks_for_answer(
-        query=" ".join(
-            [
-                str(matched_cards[0].get("theme", "")).strip() if matched_cards else "",
-                str(retrieved_chunks[0].get("themes", [""])[0]) if retrieved_chunks and retrieved_chunks[0].get("themes") else "",
-            ]
-        ).strip(),
-        retrieved_chunks=retrieved_chunks,
-    )
+    ranked_chunks = retrieved_chunks
 
     if not ranked_chunks:
         return "I do not have grounded Nietzsche material for that yet, so I will not fake an answer."
@@ -495,7 +539,13 @@ def generate_grounded_reply(message: str) -> ChatResponse:
             citations=[],
         )
 
-    retrieved_chunks = search_retrieval_corpus(query=message, top_k=7)
+    expanded_query_parts = [message]
+    inferred_topics = _canonical_topics_from_message(message)
+    if inferred_topics:
+        expanded_query_parts.append(" ".join(inferred_topics))
+    expanded_query = " ".join(part.strip() for part in expanded_query_parts if part.strip())
+
+    retrieved_chunks = search_retrieval_corpus(query=expanded_query, top_k=7)
 
     if not _retrieval_looks_in_scope(retrieved_chunks):
         return ChatResponse(
@@ -514,7 +564,7 @@ def generate_grounded_reply(message: str) -> ChatResponse:
     }
 
     matched_cards = find_relevant_cards(
-        query=message,
+        query=expanded_query,
         retrieved_source_ids=retrieved_source_ids,
         retrieved_chunks=ranked_chunks,
         top_k=2,

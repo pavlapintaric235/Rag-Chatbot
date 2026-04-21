@@ -17,7 +17,7 @@
           <p class="eyebrow">A sharper conversation</p>
           <h1>Nietzsche RAG Bot</h1>
           <p class="description">
-            A grounded Nietzsche retrieval bot for a narrow set of themes: comfort, complacency, excuse-making, herd mentality, ressentiment, fear of struggle, self-overcoming, and becoming who you are. Each reply is built from the project corpus and supported by cited passages rather than generic chat filler.
+            A grounded Nietzsche retrieval bot for real-life struggles around comfort, laziness, excuse-making, fitting in, ressentiment, fear of struggle, self-overcoming, and becoming who you are. Each reply is built from the corpus and backed by cited passages rather than generic chat filler.
           </p>
         </header>
 
@@ -29,9 +29,23 @@
             <button
               class="suggestion-chip"
               type="button"
-              data-prompt="I keep choosing comfort over difficulty and then I justify it."
+              data-prompt="I don't feel like doing anything today. Is that laziness, exhaustion, or avoidance?"
+            >
+              Laziness or avoidance
+            </button>
+            <button
+              class="suggestion-chip"
+              type="button"
+              data-prompt="Why do I keep choosing comfort over difficulty and then justify it?"
             >
               Comfort over struggle
+            </button>
+            <button
+              class="suggestion-chip"
+              type="button"
+              data-prompt="Why do I want to fit in even when I know the group is flattening me?"
+            >
+              Fitting in
             </button>
             <button
               class="suggestion-chip"
@@ -43,20 +57,6 @@
             <button
               class="suggestion-chip"
               type="button"
-              data-prompt="Why do I keep conforming to the group even when I know better?"
-            >
-              Herd mentality
-            </button>
-            <button
-              class="suggestion-chip"
-              type="button"
-              data-prompt="How does ressentiment distort the way a person judges strength?"
-            >
-              Ressentiment
-            </button>
-            <button
-              class="suggestion-chip"
-              type="button"
               data-prompt="What does becoming who you are demand beyond comfort and safety?"
             >
               Becoming who you are
@@ -64,9 +64,9 @@
             <button
               class="suggestion-chip"
               type="button"
-              data-prompt="What is the difference between real fatigue and fear of struggle?"
+              data-prompt="What is human purpose according to this Nietzsche corpus?"
             >
-              Fear of struggle
+              Human purpose
             </button>
           </div>
         </section>
@@ -78,7 +78,7 @@
             name="message"
             rows="3"
             maxlength="2000"
-            placeholder="Example: I keep choosing comfort over difficulty and then I rationalize it."
+            placeholder="Example: I don't feel like doing anything today. Is that laziness, exhaustion, or avoidance?"
             required
           ></textarea>
 
