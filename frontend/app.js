@@ -6,6 +6,7 @@ const chatFeed = document.getElementById("chat-feed");
 
 const userTemplate = document.getElementById("user-message-template");
 const assistantTemplate = document.getElementById("assistant-message-template");
+const suggestionButtons = document.querySelectorAll(".suggestion-chip");
 
 async function sendChatMessage(message) {
   const response = await fetch("/chat", {
@@ -145,7 +146,20 @@ function setBusyState(isBusy) {
   sendButton.disabled = isBusy;
   messageInput.disabled = isBusy;
   sendButton.textContent = isBusy ? "Thinking..." : "Send";
+
+  suggestionButtons.forEach((button) => {
+    button.disabled = isBusy;
+  });
 }
+
+suggestionButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const prompt = button.dataset.prompt || "";
+    messageInput.value = prompt;
+    messageInput.focus();
+    messageInput.setSelectionRange(messageInput.value.length, messageInput.value.length);
+  });
+});
 
 chatForm.addEventListener("submit", async (event) => {
   event.preventDefault();

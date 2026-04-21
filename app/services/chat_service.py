@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import re
+
 from app.models.chat import ChatCitation, ChatResponse
 from app.services.card_lookup_service import find_relevant_cards
 from app.services.retrieval_service import search_retrieval_corpus
@@ -47,11 +49,49 @@ def _normalize(text: str) -> str:
     return " ".join(text.lower().split()).strip()
 
 
+def _split_sentences(text: str) -> list[str]:
+    normalized = " ".join(text.split()).strip()
+    if not normalized:
+        return []
+
+    parts = re.split(r"(?<=[.!?])\s+", normalized)
+    return [part.strip() for part in parts if part.strip()]
+
+
 def _clip_text(text: str, max_length: int = 220) -> str:
     normalized = " ".join(text.split()).strip()
+    if not normalized:
+        return ""
+
     if len(normalized) <= max_length:
         return normalized
-    return normalized[: max_length - 3].rstrip() + "..."
+
+    sentences = _split_sentences(normalized)
+    if not sentences:
+        clipped = normalized[:max_length].rstrip()
+        return clipped + "..."
+
+    selected: list[str] = []
+    current_length = 0
+
+    for sentence in sentences:
+        extra = len(sentence) + (1 if selected else 0)
+        if current_length + extra > max_length:
+            break
+        selected.append(sentence)
+        current_length += extra
+
+    if selected:
+        result = " ".join(selected).strip()
+        if result[-1] not in ".!?":
+            result += "."
+        return result
+
+    fallback = normalized[:max_length].rstrip()
+    last_space = fallback.rfind(" ")
+    if last_space > 40:
+        fallback = fallback[:last_space].rstrip()
+    return fallback + "..."
 
 
 def _is_explicitly_in_scope(message: str) -> bool:
@@ -79,9 +119,10 @@ def _retrieval_looks_in_scope(retrieved_chunks: list[dict]) -> bool:
 
 def _build_scope_refusal() -> str:
     return (
-        "That is outside this bot's scope. It only answers within the declared Nietzsche themes "
-        "already defined in the corpus: comfort and complacency, excuse-making, herd mentality, "
-        "conformity, ressentiment, fear of struggle, self-overcoming, and becoming who you are."
+        "That is outside this bot's scope.\n\n"
+        "It only answers within the declared Nietzsche themes already defined in the corpus: "
+        "comfort and complacency, excuse-making, herd mentality, conformity, ressentiment, "
+        "fear of struggle, self-overcoming, and becoming who you are."
     )
 
 
@@ -130,21 +171,92 @@ def _select_diverse_citation_chunks(
     return selected[:max_citations]
 
 
-def _build_passage_paragraph(chunk: dict, intro: str | None = None, max_length: int = 420) -> str:
+def _format_source_label(chunk: dict) -> str:
     work = str(chunk.get("work") or "Nietzsche source").strip()
     section = str(chunk.get("section") or "").strip()
-    text = str(chunk.get("display_text") or chunk.get("text") or "").strip()
+    return f"{work}, {section}" if section else work
 
-    if not text:
+
+def _build_interpretation_paragraph(
+    matched_cards: list[dict],
+    retrieved_chunks: list[dict],
+) -> str:
+    top_card = matched_cards[0] if matched_cards else {}
+
+    angle = str(top_card.get("nietzschean_angle", "")).strip()
+    explanation = str(top_card.get("plain_explanation", "")).strip()
+
+    if angle and explanation and angle != explanation:
+        return f"{angle} {explanation}"
+
+    if angle:
+        return angle
+
+    if explanation:
+        return explanation
+
+    if retrieved_chunks:
+        top_chunk = retrieved_chunks[0]
+        top_text = str(top_chunk.get("display_text") or top_chunk.get("text") or "").strip()
+        clipped = _clip_text(top_text, max_length=260)
+        if clipped:
+            return (
+                "The corpus points to a recognizable pattern here. "
+                f"{clipped}"
+            )
+
+    return "I do not have grounded Nietzsche material for that yet, so I will not fake an answer."
+
+
+def _build_grounded_support_section(retrieved_chunks: list[dict]) -> str:
+    if not retrieved_chunks:
         return ""
 
-    source_line = f"{work}, {section}" if section else work
-    clipped = _clip_text(text, max_length=max_length)
+    parts: list[str] = []
 
-    if intro:
-        return f"{intro} In {source_line}, the corpus points to this: {clipped}"
+    primary_chunk = retrieved_chunks[0]
+    primary_label = _format_source_label(primary_chunk)
+    primary_text = str(primary_chunk.get("display_text") or primary_chunk.get("text") or "").strip()
+    primary_excerpt = _clip_text(primary_text, max_length=360)
 
-    return f"In {source_line}, the corpus points to this: {clipped}"
+    if primary_excerpt:
+        parts.append(
+            "Grounded support:\n"
+            f'From "{primary_label}": "{primary_excerpt}"'
+        )
+
+    if len(retrieved_chunks) > 1:
+        secondary_chunk = retrieved_chunks[1]
+        secondary_label = _format_source_label(secondary_chunk)
+        secondary_text = str(secondary_chunk.get("display_text") or secondary_chunk.get("text") or "").strip()
+        secondary_excerpt = _clip_text(secondary_text, max_length=260)
+
+        if secondary_excerpt:
+            parts.append(
+                "Second passage:\n"
+                f'From "{secondary_label}": "{secondary_excerpt}"'
+            )
+
+    return "\n\n".join(parts)
+
+
+def _build_conclusion_paragraph(
+    matched_cards: list[dict],
+    retrieved_chunks: list[dict],
+) -> str:
+    top_card = matched_cards[0] if matched_cards else {}
+    explanation = str(top_card.get("plain_explanation", "")).strip()
+
+    if explanation:
+        return explanation
+
+    if retrieved_chunks:
+        return (
+            "The issue is not strain by itself or rest by itself. "
+            "The issue is what gets elevated into a principle of life, and whether comfort has started to rule where growth, discipline, or self-overcoming should rule."
+        )
+
+    return ""
 
 
 def _build_answer(
@@ -153,45 +265,29 @@ def _build_answer(
     matched_cards: list[dict],
 ) -> str:
     if not retrieved_chunks:
-        return (
-            "I do not have grounded Nietzsche material for that yet, "
-            "so I will not fake an answer."
-        )
+        return "I do not have grounded Nietzsche material for that yet, so I will not fake an answer."
 
-    primary_chunk = retrieved_chunks[0]
-    secondary_chunk = retrieved_chunks[1] if len(retrieved_chunks) > 1 else None
+    sections: list[str] = []
 
-    top_card = matched_cards[0] if matched_cards else {}
-    angle = str(top_card.get("nietzschean_angle", "")).strip()
-    explanation = str(top_card.get("plain_explanation", "")).strip()
+    interpretation = _build_interpretation_paragraph(
+        matched_cards=matched_cards,
+        retrieved_chunks=retrieved_chunks,
+    ).strip()
+    if interpretation:
+        sections.append(f"Reading:\n{interpretation}")
 
-    parts: list[str] = []
+    grounded_support = _build_grounded_support_section(retrieved_chunks=retrieved_chunks).strip()
+    if grounded_support:
+        sections.append(grounded_support)
 
-    opening = angle or explanation
-    if opening:
-        parts.append(opening)
+    conclusion = _build_conclusion_paragraph(
+        matched_cards=matched_cards,
+        retrieved_chunks=retrieved_chunks,
+    ).strip()
+    if conclusion:
+        sections.append(f"Conclusion:\n{conclusion}")
 
-    primary_paragraph = _build_passage_paragraph(
-        primary_chunk,
-        intro="The strongest grounded support for that reading comes from the top retrieved passage.",
-        max_length=420,
-    )
-    if primary_paragraph:
-        parts.append(primary_paragraph)
-
-    if secondary_chunk is not None:
-        secondary_paragraph = _build_passage_paragraph(
-            secondary_chunk,
-            intro="A second passage strengthens the same line of interpretation.",
-            max_length=280,
-        )
-        if secondary_paragraph:
-            parts.append(secondary_paragraph)
-
-    if explanation and explanation != opening:
-        parts.append(explanation)
-
-    return "\n\n".join(part for part in parts if part)
+    return "\n\n".join(section for section in sections if section.strip())
 
 
 def generate_grounded_reply(message: str) -> ChatResponse:
